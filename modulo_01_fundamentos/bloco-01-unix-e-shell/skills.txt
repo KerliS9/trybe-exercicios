@@ -8,4 +8,5 @@ React
 SQL
 Git
 Github
+Pull request
 Issues
