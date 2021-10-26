@@ -7,10 +7,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 Fundamentos do Desenvolvimento Web
 
-Bloco 1: IntroduÃ§Ã£o - Unix & Shell
- 1-3: Unix & Shell- Part 1
- 1-4: Unix & Shell- Part 2
-Bloco 2: Git & GitHub
- 2-1: O que é e para que serve?
- 2-2: Entendendo os comandos
- 2-3: Internet - Entendendo como ela funciona
+Bloco 01: Unix & Bash
+ 01.01: Criação de arquivos e diretórios
+ 01.02: Manipulação & Busca
+ 01.03: Comandos de Input e Output
+ 01.04: Permissões
+ 01.05: Processos & Jobs
+ 01.06: O despertar do terminal
+Bloco 02: Git, GitHub e Internet
+ 02.01: Instalação e configuração
+ 02.02: Criar conta no GitHub
+ 02.03: Adicionando uma chave SSH na sua conta do GitHub
+ 02.04: O seu repositório no GitHub
+ 02.05: A prática
+ 02.06: Recapitulando
