@@ -1,0 +1,27 @@
+h1 {
+    font-family: sans-serif;
+    text-decoration: underline overline;
+}
+p {
+    font-weight: 600;
+}
+body {
+    font-size: 16px;
+    text-align: center;
+}
+ul {
+    font-style: italic;
+    line-height: 50px;
+    }
+#blue {
+    background-color: blue;
+    color:white
+}
+#black {
+    background-color: black;
+    color: white
+}
+#gray {
+    background-color: gray;
+    color: white
+}
