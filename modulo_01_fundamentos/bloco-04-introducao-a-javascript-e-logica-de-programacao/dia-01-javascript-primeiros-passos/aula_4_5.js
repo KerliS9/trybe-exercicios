@@ -123,3 +123,16 @@ if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0 ) {
 }
 
 //exercicio 10
+const custoProduto = 1;
+const valorVenda = 1;
+let quantidade = 1000;
+let imposto = custoProduto * 0.20;
+let custoTotal = custoProduto + imposto;
+let lucro = (valorVenda * quantidade) - custoTotal;
+
+if (custoProduto < 0 || valorVenda < 0 || quantidade < 0){
+	console.log ('Verificar valores lançados em custoProduto, valorVenda ou quantidade')
+} else {
+	console.log ('Lucro de ' + lucro + ' reais.')
+}
+//exercicio 11
