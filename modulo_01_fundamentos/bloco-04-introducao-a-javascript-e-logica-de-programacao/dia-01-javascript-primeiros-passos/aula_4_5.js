@@ -80,3 +80,46 @@ if (pecaXadrez.toLowerCase() == 'cavalo') {
 } else {
 	console.log ('Não é uma peça de xadrez!')
 }
+
+//exercicio 7
+let grade = 80;
+
+if (grade <= 100 && grade >= 90) {
+	console.log ('A');
+} else if (grade < 90 && grade >= 80) {
+	console.log ('B');
+} else if (grade < 80 && grade >= 70) {
+	console.log ('C');
+} else if (grade < 70 && grade >= 60) {
+	console.log ('D');
+} else if (grade < 60 && grade >= 50) {
+	console.log ('E');
+} else if (grade < 50 && grade > 0) {
+	console.log ('F');
+} else {
+	console.log ('Número não se aplica a tabela')
+}
+
+//exercicio 8
+const num1 = 3;
+const num2 = 9;
+const num3 = 7;
+
+if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0 ) {
+	console.log (true);
+} else {
+	console.log (false)
+}
+
+//exercicio 9
+const num1 = 10;
+const num2 = 10;
+const num3 = 10;
+
+if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0 ) {
+	console.log (true);
+} else {
+	console.log (false)
+}
+
+//exercicio 10
