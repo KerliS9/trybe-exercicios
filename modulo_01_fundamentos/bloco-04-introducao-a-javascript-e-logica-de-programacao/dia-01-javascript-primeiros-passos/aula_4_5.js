@@ -65,17 +65,17 @@ if (ang1 + ang2 + ang3 === 180) {
 //exercicio 6
 let pecaXadrez = 'Cavalo';
 
-if (pecaXadrez == 'cavalo') {
+if (pecaXadrez.toLowerCase() == 'cavalo') {
 	console.log ('Formato L');
-} else if (pecaXadrez.toLowerCase === 'bispo') {
+} else if (pecaXadrez.toLowerCase() === 'bispo') {
 	console.log ('Diagonal'); 
-} else if (pecaXadrez.toLowerCase === 'rainha') {
+} else if (pecaXadrez.toLowerCase() === 'rainha') {
 	console.log ('Uma casa por vez em todas as direções');
-} else if (pecaXadrez.toLowerCase === 'dama') {
+} else if (pecaXadrez.toLowerCase() === 'dama') {
 	console.log ('Diagonais e retas');
-} else if (pecaXadrez.toLowerCase === 'torre') {
+} else if (pecaXadrez.toLowerCase() === 'torre') {
 	console.log ('Linhas retas');
-} else if (pecaXadrez.toLowerCase === 'peao') {
+} else if (pecaXadrez.toLowerCase() === 'peao') {
 	console.log ('Na primeira jogada do peão, este pode avançar 2 casas, depois somente uma')
 } else {
 	console.log ('Não é uma peça de xadrez!')
