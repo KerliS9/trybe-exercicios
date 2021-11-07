@@ -37,7 +37,7 @@ console.log(false && false); // false
 // o resultado somente será true se todas as condições com && serem true.
 
 const currentHour = 2;
-let mesage = '';
+let message = '';
 
 if (currentHour >= 22) {
 	console.log ('Não deveríamos comer nada, é hora de dormir');
@@ -49,7 +49,10 @@ if (currentHour >= 22) {
 	console.log ('Hora do almoço!!!');
 } else if (currentHour >= 4 && currentHour < 11) {
 	console.log ('Hmmm, cheiro de café recém passado.')
-} //se a hora for menor que 4, nada acontece, pois não a mensagem prevista para imprimir.
+} else {
+	console.log (message);
+} 
+//se a hora for menor que 4, a mensagme fica vazia, pois não a mensagem prevista para imprimir.
 
 //operador ||, lê-se or
 const bebidaPrincipal =  'cafezinho';
