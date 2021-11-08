@@ -5,7 +5,7 @@ console.log (numbers);
 
 //exercicio 2
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let sum = 0; //se operador soma, precisa iniciar em 
+let sum = 0; //se operador soma, precisa iniciar em Zero. Se multitiplicação iniciar em 1.
 
 for (let i = 0; i < numbers.length; i += 1) {
 	sum += (numbers[i]); //sintaxe sum = sum + numbers[i]
@@ -13,3 +13,40 @@ for (let i = 0; i < numbers.length; i += 1) {
 console.log (sum)
 
 //exercicio 3
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let sum = 0; 
+let medA = 0;
+
+for (let i = 0; i < numbers.length; i += 1) {
+	sum += (numbers[i]); 
+	medA = sum / numbers.length
+}
+console.log (medA)
+
+//exercicio 4
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let sum = 0; 
+let medA = 0;
+
+for (let i = 0; i < numbers.length; i += 1) {
+	sum += (numbers[i]); 
+	medA = sum / numbers.length
+}
+if (medA > 20) {
+	console.log('Valor maior que 20');
+} else {
+	console.log ('Valor menor ou igual a 20');
+}
+
+//exercicio 5
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let higherNumber = numbers[0];
+
+for (let i = 0; i < numbers.length; i += 1) {
+	if (numbers[i] > higherNumber) {
+	higherNumber = numbers[i];
+	}
+}
+console.log (higherNumber);
+
+//exercicio 6
