@@ -136,3 +136,35 @@ if (custoProduto < 0 || valorVenda < 0 || quantidade < 0){
 	console.log ('Lucro de ' + lucro + ' reais.')
 }
 //exercicio 11
+let salario = 3000.00;
+let imposto1 = 0.08;
+let imposto2 = 0.09;
+let imposto3 = 0.11;
+let salarioSemInss = '';
+let ir1 = 0.075;
+let ir2 = 0.15;
+let ir3 = 0.225;
+let ir4 = 0.275;
+let salarioLiquido = '';
+
+if (salario <= 1556.94) {
+	console.log(salarioSemInss = salario - (salario * imposto1));
+} else if (salario > 1556.94 && salario <= 2594.92) {
+	console.log(salarioSemInss = salario - (salario * imposto2));
+} else if (salario > 2594.92 && salario <= 5189.82) {
+	console.log(salarioSemInss = salario - (salario * imposto3));
+} else {
+	console.log(salarioSemInss = salario - 570.88)
+}
+
+if (salarioSemInss <= 1903.98) {
+	console.log ('Isento de imposto de renda');
+} else if (salarioSemInss > 1903.98 && salarioSemInss <= 2826.65) {
+	console.log(salarioLiquido = salarioSemInss - ((2826.65 - salarioSemInss) * ir1));
+} else if (salarioSemInss > 2826.65 && salarioSemInss <= 3751.05) {
+	console.log(salarioLiquido = salarioSemInss - ((3751.05 - salarioSemInss) * ir2));
+} else if (salarioSemInss > 3751.05 && salarioSemInss <= 4664.68) {
+	console.log(salarioLiquido = salarioSemInss - ((4664.85 - salarioSemInss) * ir3));
+} else {
+	console.log(salarioLiquido = salarioSemInss - ((salarioSemInss - 4664.85) * ir4))
+}
