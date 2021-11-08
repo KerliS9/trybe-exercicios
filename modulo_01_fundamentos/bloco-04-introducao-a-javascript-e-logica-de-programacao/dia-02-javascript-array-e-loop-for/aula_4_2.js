@@ -39,6 +39,6 @@ console.log(arrOfNumbers); //a array não será alterada,o dado adicionado será
 //EXERCICIO
 //exercicio 1
 let names = ['João', 'Maria', 'Antônio', 'Margarida'];
-for (names of names) {
+for (names of names) { //imprime os nomes em lista
 	console.log(names);
 }
