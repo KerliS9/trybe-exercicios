@@ -160,11 +160,11 @@ if (salario <= 1556.94) {
 if (salarioSemInss <= 1903.98) {
 	console.log ('Isento de imposto de renda');
 } else if (salarioSemInss > 1903.98 && salarioSemInss <= 2826.65) {
-	console.log(salarioLiquido = salarioSemInss - ((2826.65 - salarioSemInss) * ir1));
+	console.log(salarioLiquido = salarioSemInss - ((salarioSemInss - 1903.98) * ir1));
 } else if (salarioSemInss > 2826.65 && salarioSemInss <= 3751.05) {
-	console.log(salarioLiquido = salarioSemInss - ((3751.05 - salarioSemInss) * ir2));
+	console.log(salarioLiquido = salarioSemInss - ((salarioSemInss - 2826.65) * ir2));
 } else if (salarioSemInss > 3751.05 && salarioSemInss <= 4664.68) {
-	console.log(salarioLiquido = salarioSemInss - ((4664.85 - salarioSemInss) * ir3));
+	console.log(salarioLiquido = salarioSemInss - ((salarioSemInss - 3751.05) * ir3));
 } else {
 	console.log(salarioLiquido = salarioSemInss - ((salarioSemInss - 4664.85) * ir4))
 }
