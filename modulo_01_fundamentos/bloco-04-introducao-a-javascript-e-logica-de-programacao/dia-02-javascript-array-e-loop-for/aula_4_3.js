@@ -40,13 +40,24 @@ if (medA > 20) {
 
 //exercicio 5
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let higherNumber = numbers[0];
+let maiorValor = 0;
 
 for (let i = 0; i < numbers.length; i += 1) {
-	if (numbers[i] > higherNumber) {
-	higherNumber = numbers[i];
+	if (numbers[i] > maiorValor) {
+	maiorValor = numbers[i];
 	}
 }
-console.log (higherNumber);
+console.log (maiorValor);
+
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let maiorValor = 0;
+
+for (const number of numbers) {
+	if (number > maiorValor) {
+		maiorValor = number;
+	}
+}
+console.log(maiorValor);
 
 //exercicio 6
