@@ -11,6 +11,7 @@ let diasDaSemana = {
 	
 	//diasDaSemana.1; // SyntaxError: Unexpected number (comentei para sair o erro)
 	console.log(diasDaSemana['1']); // domingo
+	console.log(diasDaSemana[1]); //qdo a propriedade for do tipo number precisar usar colchetes para chamar.
 
 //Exemplo 2 - formas de acessar os objetos dentro das chaves
 let conta = {
