@@ -9,7 +9,7 @@ let diasDaSemana = {
 	7: 'sábado',
 	};
 	
-	diasDaSemana.1; // SyntaxError: Unexpected number
+	//diasDaSemana.1; // SyntaxError: Unexpected number (comentei para sair o erro)
 	console.log(diasDaSemana['1']); // domingo
 
 //Exemplo 2 - formas de acessar os objetos dentro das chaves
