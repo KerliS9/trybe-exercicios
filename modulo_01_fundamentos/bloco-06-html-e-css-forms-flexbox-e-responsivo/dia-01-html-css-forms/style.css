@@ -1,6 +1,6 @@
 body {
 	background-color: rgb(179, 187, 187);
-
+	margin: 5px 50px;
 }
 
 header {
@@ -10,4 +10,5 @@ header {
 
 fieldset {
 	font-size: large;
+	margin: 5px 5px;
 }
