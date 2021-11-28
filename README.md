@@ -1,6 +1,4 @@
-<img src="https://go.betrybe.com/hubfs/logo%20cortada%20branca.png" width="50">
-
-# [TRYBE](https://www.betrybe.com/)!
+# [TRYBE](https://www.betrybe.com/)! <img src="https://go.betrybe.com/hubfs/logo%20cortada%20branca.png" width="50">
 
 >_Este repositório contêm todas as atividades e projetos que [eu, Kerli,](https://www.linkedin.com/in/kerlischroeder/) fiz e/ou colaborei enquanto estudante da [TRYBE](https://www.betrybe.com/).
 
@@ -17,7 +15,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 >Ajudar também as empresas que precisam de profissionais de qualidade para crescer, escalar seus produtos e serviços e executar suas teses de transformação digital. Hoje essas empresas não conseguem atender suas necessidades de recrutamento devido ao gargalo estrutural de mão de obra qualificada no setor.
 Com isso, ajudar o Brasil a ser um país mais produtivo e com mais oportunidades, que gere mais trabalho e renda para a população e que tenha condições de disputar posições de destaque no cenário internacional, visto que cada vez mais o digital ganha um papel relevante no desempenho econômico e social no mundo.
 Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento web e estão dispostas a serem protagonistas de suas trajetórias, a [_Trybe_](https://www.betrybe.com/) é uma escola que tem comprometimento genuíno com o sucesso profissional das pessoas estudantes.
-
 
 
 ## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
