@@ -1,6 +1,6 @@
 # [TRYBE](https://www.betrybe.com/)<img src="https://go.betrybe.com/hubfs/logo%20cortada%20branca.png" width="50">
 
->Este repositório contêm todas as atividades e projetos que [eu, Kerli,](https://www.linkedin.com/in/kerlischroeder/) fiz e/ou colaborei enquanto estudante da [TRYBE](https://www.betrybe.com/).
+>Este repositório contêm todas as atividades e projetos que eu, [Kerli,](https://www.linkedin.com/in/kerlischroeder/) fiz e/ou colaborei enquanto estudante da [TRYBE](https://www.betrybe.com/).
 
 ## _Quem é Trybe_
 >A [_Trybe_](https://www.betrybe.com/) é uma escola de desenvolvimento web que te ensina a programar, a aprender e a trabalhar.
@@ -11,7 +11,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 **Seus objetivos são:**
 
->Formar pessoas nas profissões que são e serão demandadas pelo mercado de trabalho, respeitando ao máximo o tempo, o dinheiro e os sonhos das pessoas estudantes ao assumir o compromisso efetivo com o sucesso de cada uma. Assim, trabalhamos ativamente desde o início da formação para preparar e conectar estudantes com o mercado de trabalho.__
+>Formar pessoas nas profissões que são e serão demandadas pelo mercado de trabalho, respeitando ao máximo o tempo, o dinheiro e os sonhos das pessoas estudantes ao assumir o compromisso efetivo com o sucesso de cada uma. Assim, trabalhamos ativamente desde o início da formação para preparar e conectar estudantes com o mercado de trabalho.
+
 >Ajudar também as empresas que precisam de profissionais de qualidade para crescer, escalar seus produtos e serviços e executar suas teses de transformação digital. Hoje essas empresas não conseguem atender suas necessidades de recrutamento devido ao gargalo estrutural de mão de obra qualificada no setor.
 Com isso, ajudar o Brasil a ser um país mais produtivo e com mais oportunidades, que gere mais trabalho e renda para a população e que tenha condições de disputar posições de destaque no cenário internacional, visto que cada vez mais o digital ganha um papel relevante no desempenho econômico e social no mundo.
 Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento web e estão dispostas a serem protagonistas de suas trajetórias, a [_Trybe_](https://www.betrybe.com/) é uma escola que tem comprometimento genuíno com o sucesso profissional das pessoas estudantes.
@@ -19,20 +20,20 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 
 ## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
 
-##### [Bloco 1: Introdução - Unix & Bash](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos)
+##### [Bloco 1: Introdução - Unix & Bash](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-01-unix-e-shell)
 
 - [X] 1-3: _Fundamentos do Desenvolvimento Web_
 - [X] 1-3: _Introdução - Unix & Shell_
 - [X] 1-3: _Unix & Bash - Part 1_
 - [X] 1-4: _Unix & Bash - Part 2_
 
-##### [Bloco 2: Git, GitHub e Internet]
+##### [Bloco 2: Git, GitHub e Internet](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-02-git-github-e-internet)
 
 - [X] 2-1: _Git & GitHub - O que é e para que serve?_
 - [X] 2-2: _Git & GitHub - Entendendo os comandos_
 - [X] 2-3: _Internet - Entendendo como ela funciona_
 
-##### [Bloco 3: Introdução à HTML & CSS]
+##### [Bloco 3: Introdução à HTML & CSS](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-03-introducao-a-html-e-css)
 
 - [X] 3-1: _Introdução - HTML & CSS_
 - [X] 3-1: _HTML & CSS - Estruturas de página_
@@ -41,7 +42,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 3-4: _HTML Semântico_
 - [X] 3-5: _[Projeto - Lessons Learned]_
 
-##### [Bloco 4: Introdução à JavaScript e Lógica de Programação]
+##### [Bloco 4: Introdução à JavaScript e Lógica de Programação](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-04-introducao-a-javascript-e-logica-de-programacao)
 
 - [X] 4-1: _Introdução - JavaScript_
 - [X] 4-1: _JavaScript - Primeiros passos_
@@ -50,7 +51,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 4-4: _JavaScript - Objetos e Funções_
 - [X] 4-5: _[Projeto - Playground Functions]_
 
-##### Bloco 5: JavaScrip: DOM, Eventos e Web Storage
+##### [Bloco 5: JavaScrip: DOM, Eventos e Web Storage](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-01-javascript-dom-e-seletores)
 
 - [ ] 5-1: _JavaScript - DOM e seletores_
 - [ ] 5-2: _JavaScript - Trabalhando com elementos_
@@ -63,7 +64,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [ ] 5-7: _[Projeto Bônus - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto Bônus - Carta Misteriosa]()_
 
-##### Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo
+##### [Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo)
 
 - [ ] 6-1: _HTML & CSS - Forms_
 - [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
