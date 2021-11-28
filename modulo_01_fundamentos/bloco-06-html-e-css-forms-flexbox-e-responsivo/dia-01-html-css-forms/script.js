@@ -33,7 +33,7 @@ const state = document.getElementById('state');
 function criaOptions() {
 	for (let i in estados) {
 		const option = document.createElement('option');
-		option.setAttribute('value', i);
+		option.setAttribute('value', i); //
 		option.innerText = estados[i];
 		state.appendChild(option);
 	}
@@ -47,9 +47,9 @@ function checkDate () {
 	const mes = parseInt(dateValue.slice(3, 5));
 	const ano = parseInt(dateValue.slice(6, 10));
 	if ((dia > 0 && dia <= 31) && (mes > 0 && mes <= 12) && (ano > 0)) {
+		console.log('data válida');
 		return true;
 	} else {
-		return alert('Favor, preencher data no formato dd/mm/aaaa');
+		alert('Favor, preencher data no formato dd/mm/aaaa');
 	}
-}
-
+} 
