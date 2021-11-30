@@ -1,0 +1,8 @@
+Bash
+Git
+HTML
+Internet
+Java Script
+Pesquisa
+Terminal
+Unix
