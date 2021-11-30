@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+.header-img {
+  width: 70px;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: aqua;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: aquamarine;
+}
