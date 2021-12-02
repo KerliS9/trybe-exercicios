@@ -1,0 +1,49 @@
+body {
+	font-size: 20px;
+	margin: 25px;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+img {
+  max-width: 95%;
+	padding: 10px;
+}
+
+figure {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+	body {
+		background-color: gray;
+		font-size: 30px;
+		margin: 50px;
+	}
+	main {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	main h2 {
+		width: 100%;
+	}
+	figure {
+		width: 50%;
+	}
+}
+
+@media (min-width: 1280px) {
+	body {
+		background-color: rgb(184, 74, 74);
+		font-size: 35px;
+		margin: 70px;
+	}
+}
