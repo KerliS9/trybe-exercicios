@@ -41,19 +41,15 @@ console.log(customer);
 
 // crie uma função que receba três parâmetros, sendo eles: um objeto, o nome de uma chave e o seu valor. O retorno dessa função deve ser o objeto já com a nova chave adicionada nele.
 
-function createObj () { // não esta retornando o objeto. somente a chave e valor
-	const newObj = {};
-	newObj.chave = 'valor';
-	// newObj['chave'] = 'valor';
-	console.log(newObj);
-	return newObj;
-}
-console.log(createObj());
+let customer = { // erro undefined na função
+  firstName: 'Roberto',
+  age: 22,
+  job: 'Teacher',
+};
 
-const person = {}
-function creObj () {
-	person.name = 'Kerli';
-	console.log(person);
-	return person;
+function createObj (object, key, value) { 
+	object['key'] = 'value';
+	console.log(value);
 }
-console.log(creObj());
+console.log(createObj('costumer', 'birthday', '20/05/1990'));
+
