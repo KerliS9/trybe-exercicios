@@ -23,5 +23,3 @@ const verifyCredentials = ({ userName, password }) => {
 const { userName, password } = user;
 
 module.exports = { greetingMessage, loginErrorMessage, verifyCredentials }
-
-// irá ocorrer erro no test pois o user esta diferente do esperado.

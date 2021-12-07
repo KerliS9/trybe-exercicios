@@ -10,7 +10,7 @@ describe("a função verifyCredentials()", () => {
   it("verifyCredentials() calls the correct function depending on the user and password input", () => {
     
     const user = {
-      userName: 'Bob',
+      userName: 'Joana', // com Bob daria erro, pois é diferente do resultado esperado.
       password: 123456,
     };
       
