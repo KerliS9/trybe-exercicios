@@ -41,15 +41,15 @@ console.log(customer);
 
 // crie uma função que receba três parâmetros, sendo eles: um objeto, o nome de uma chave e o seu valor. O retorno dessa função deve ser o objeto já com a nova chave adicionada nele.
 
-let customer = { // erro undefined na função
+let customer = { 
   firstName: 'Roberto',
   age: 22,
   job: 'Teacher',
 };
-
-function createObj (object, key, value) { 
-	object['key'] = 'value';
-	console.log(value);
+console.log(customer);
+function createObj (object, key, value) { // inseri parâmetros
+	object[key] = value; // colocar a formação sem aspas
+	return object;
 }
-console.log(createObj('costumer', 'birthday', '20/05/1990'));
-
+console.log(createObj(customer, 'birthday', '20/05/1990')); // inserir chave e valor entre aspas
+console.log(customer);
