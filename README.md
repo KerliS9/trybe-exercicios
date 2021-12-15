@@ -27,15 +27,15 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 1-3: _Unix & Bash - Part 1_
 - [X] 1-4: _Unix & Bash - Part 2_
 - [X] 1-5: _Revisão_
-- [] 1-6: _Adicionais_
+- [X] 1-6: _Adicionais_
 
 ##### [Bloco 2: Git, GitHub e Internet](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-02-git-github-e-internet)
 
 - [X] 2-1: _Git & GitHub - O que é e para que serve?_
 - [X] 2-2: _Git & GitHub - Entendendo os comandos_
 - [X] 2-3: _Internet - Entendendo como ela funciona_
-- [] 2-4: _Revisão_
-- [] 2-5: _Adicionais_
+- [X] 2-4: _Revisão_
+- [X] 2-5: _Adicionais_
 
 ##### [Bloco 3: Introdução à HTML & CSS](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-03-introducao-a-html-e-css)
 
@@ -55,7 +55,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 4-2: _JavaScript - Array e loop For_
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [X] 4-4: _JavaScript - Objetos e Funções_
-- [X] 4-5: _[Projeto - Playground Functions]_
+- [X] 4-5: _[Projeto - Playground Functions](https://github.com/KerliS9/portfolio_kerli/tree/master/2-projectPlaygroundFunctions)_
 - [] 4-6: _Revisão_
 - [] 4-7: _Adicionais_
 
@@ -66,8 +66,8 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
 - [X] 5-5: _Fundamentos - JavaScript - Projetos_
-- [ ] 5-5: _[Projeto - Arte com Pixels]()_
-- [X] 5-6: _[Projeto - Lista de Tarefas]()_
+- [X] 5-5: _[Projeto - Arte com Pixels](https://github.com/KerliS9/portfolio_kerli/tree/master/3-projectPixelsArt)_
+- [X] 5-6: _[Projeto - Lista de Tarefas](https://github.com/KerliS9/portfolio_kerli/tree/master/4-projectToDoList)_
 - [ ] 5-7: _[Projeto Bônus - Meme Generator]()_
 - [ ] 5-7: _[Projeto Bônus - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto Bônus - Carta Misteriosa]()_
@@ -77,27 +77,27 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 ##### [Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo)
 
 - [X] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 6-3: _CSS Flexbox - Part 1_
-- [ ] 6-4: _CSS Flexbox - Part 2_
-- [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - Trybewarts]()_
+- [X] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [X] 6-3: _CSS Flexbox - Part 1_
+- [X] 6-4: _CSS Flexbox - Part 2_
+- [X] 6-5: _CSS Responsivo - Mobile First_
+- [X] 6-6: _[Projeto - Trybewarts](https://github.com/KerliS9/portfolio_kerli/tree/master/5-projectTrybewarts)_
 - [] 6-7: _Revisão_
 - [] 6-8: _Adicionais_
 
 ##### Bloco 7: Introdução à JavaScript ES6 & Testes Unitários
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [ ] 7-2: _JavaScript ES6 - Objects_
-- [ ] 7-3: _Primeiros passos em Jest_
+- [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [X] 7-2: _JavaScript ES6 - Objects_
+- [X] 7-3: _Primeiros passos em Jest_
 - [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 - [] 7-5: _Revisão_
 - [] 7-6: _Adicionais_
 
 ##### Bloco 8: Higher Order Functions do JavaScript ES6
 
-- [ ] 8-1: _JavaScript ES6 - Introdução à Higher Order Functions_
-- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [X] 8-1: _JavaScript ES6 - Introdução à Higher Order Functions_
+- [X] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [ ] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [ ] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
