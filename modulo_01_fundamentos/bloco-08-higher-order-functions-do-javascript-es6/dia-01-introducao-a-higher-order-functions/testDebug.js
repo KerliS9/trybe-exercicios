@@ -1,5 +1,5 @@
 const repeat = (number, action) => {
-  for (let count = 0; count <= number; count += 1) {
+  for (let count = 0; count <= number; count += 1) { // setar o fim do debug
     action(count);
   }
 };
@@ -13,5 +13,5 @@ const isOdd = (number) => {
     console.log(number, 'is odd');
   }
 };
-repeat(3, isEven); // Testa quais números serão pares;
+repeat(10, isEven); // Testa quais números serão pares;
 repeat(3, isOdd); // Testa quais números serão ímpares;

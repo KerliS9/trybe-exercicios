@@ -108,7 +108,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 ##### Bloco 9: JavaScript e Testes Assíncronos
 
 - [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Assí­ncrono - Fetch API e async/await_
+- [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [ ] 9-3: _Jest - Testes Assíncronos_
 - [ ] 9-4: _[Projeto - Carrinho de Compras]()_
 - [] 9-5: _Revisão_
@@ -128,7 +128,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 
 - [ ] 11-1: _Componentes com Estado e Eventos_
 - [ ] 11-2: _Formulários no React_
-- [ ] 11-3: _[Projeto - Tryunfo]()_
+- [ ] 11-3: _[Projeto - Triunfo]()_
 
 ##### Bloco 12: Ciclo de vida de componentes e React Router
 
@@ -180,7 +180,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [ ] 19-1: _Introdução - Bancos de dados relacionais_
 - [ ] 19-1: _Banco de dados SQL_
 - [ ] 19-2: _Encontrando dados em um banco de dados_
-- [ ] 19-3: _Filtrando dados de forma especí­fica_
+- [ ] 19-3: _Filtrando dados de forma específica_
 - [ ] 19-4: _Manipulando tabelas_
 - [ ] 19-5: _[Projeto - All For One]()_
 
