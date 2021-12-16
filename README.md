@@ -45,8 +45,8 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
 - [X] 3-5: _[Projeto - Lessons Learned]_
-- [] 3-6: _Revisão_
-- [] 3-7: _Adicionais_
+- [X] 3-6: _Revisão_
+- [X] 3-7: _Adicionais_
 
 ##### [Bloco 4: Introdução à JavaScript e Lógica de Programação](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-04-introducao-a-javascript-e-logica-de-programacao)
 
