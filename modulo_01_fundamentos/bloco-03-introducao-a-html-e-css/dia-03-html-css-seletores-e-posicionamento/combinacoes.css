@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 15px;
+  padding: 15px;
+}
+
+.ímpar {
+  background-color: yellow;
+  text-transform: uppercase;
+}
+
+.par {
+  background-color: green;
+}
+
+h1 {
+  color: red;
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+li {
+  font-size: 20px;
+}
+
+.firsts {
+  color: blueviolet;
+}
+
+#stack:hover {
+  background-color: orange;
+}
+
+#w3:hover {
+  background-color: rgb(23, 241, 23);
+}
+
+#mdn:hover {
+  background-color: black;
+}
+
+#dev:hover {
+  background-color: yellow;
+}
+
+#trybe:hover {
+  background-color:green;
+}
