@@ -1,13 +1,10 @@
-//parte 1
+// parte 1
 let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
 
-console.log(tasksList.length);
-// 3
+console.log(tasksList.length); // 3
 
+// parte 2
 let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
-
-
-//parte 2
 let searchForFirstTask = tasksList[0];
 console.log(searchForFirstTask);
 // Tomar café
@@ -17,51 +14,47 @@ console.log(searchForLastTask);
 // Brincar com o cachorro
 
 
-//parte 3
+// parte 3
 let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
 
-tasksList.push('Fazer exercícios da Trybe');  // adiciona mais uma tarefa
+tasksList.push('Fazer exercícios da Trybe');  // adiciona mais uma tarefa ao final do array
 console.log(tasksList);
 
 // ['Tomar café', 'Reunião', 'Brincar com o cachorro', 'Fazer exercícios da Trybe']
-tasksList.unshift('Participar das mentorias'); //adiciona um item ao início da lista
+tasksList.unshift('Participar das mentorias'); // adiciona um item ao início da lista
 console.log (tasksList);
 
 
-//parte 4
+// parte 4
 let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
 
 tasksList.pop();  // remove a última tarefa
 console.log(tasksList);
 
 // [ 'Tomar café', 'Reunião' ]
-tasksList.shift(); //remove o primeiro item da lista
+tasksList.shift(); // remove o primeiro item da lista
 console.log(tasksList);
 
 
-//parte 5
+// parte 5
 let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
 
-let indexOfTask = tasksList.indexOf('Reunião');
-console.log(indexOfTask);
+let indexOfTask = tasksList.indexOf('Reunião'); // mostra o índice da tarefa dentro do array
+console.log(indexOfTask); // 1
 
-// 1
-
-
-//EXERCICIOS
-//Exercicio 1
+// Exercício 1
 let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
-let menuServices = menu;
+let menuServices = menu[1];
 
 console.log(menuServices);
 
-//Exercicio 2
+// Exercício 2
 let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 let indexOfPortfolio = menu.indexOf('Portfólio');
 
 console.log(indexOfPortfolio);
 
-//Exercicio 3
+// Exercício 3
 let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 
 menu.push('Contato');

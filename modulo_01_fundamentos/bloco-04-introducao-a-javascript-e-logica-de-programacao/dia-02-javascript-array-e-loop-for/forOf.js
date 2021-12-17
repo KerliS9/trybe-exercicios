@@ -1,4 +1,4 @@
-//parte 1
+// parte 1
 let numeros = [1,2,3,4,5];
 for(let numero of numeros) {
   console.log(numero);
@@ -11,9 +11,9 @@ for(let numero of numeros) {
 //4
 //5
 
-//parte 2
+// parte 2
 let word = 'Hello';
-for (let letter of word) { //extrai letra a letra, separando em linhas
+for (let letter of word) { // extrai letra a letra, separando em linhas
   console.log(letter); 
 }
 // resultado:
@@ -23,9 +23,9 @@ for (let letter of word) { //extrai letra a letra, separando em linhas
 // "l"
 // "o"
 
-//parte 3
+// parte 3
 let arrOfNumbers = [10, 20, 30];
-for (let sum of arrOfNumbers) { //soma, devido ao sum, o valor definido a cada número da array.
+for (let sum of arrOfNumbers) { // soma +1 ao valor definido a cada número da array.
   sum += 1;
   console.log(sum);
 }
@@ -33,12 +33,11 @@ for (let sum of arrOfNumbers) { //soma, devido ao sum, o valor definido a cada n
 // 21
 // 31
 
-console.log(arrOfNumbers); //a array não será alterada,o dado adicionado será temporário.
+console.log(arrOfNumbers); // a array não será alterada, o dado adicionado será temporário.
 // Resultado: [10, 20, 30]
 
-//EXERCICIO
-//exercicio 1
+// exercício 1
 let names = ['João', 'Maria', 'Antônio', 'Margarida'];
-for (names of names) { //imprime os nomes em lista
+for (names of names) { // imprime os nomes em lista
 	console.log(names);
 }
