@@ -52,7 +52,7 @@ if (currentHour >= 22) {
 } else {
 	console.log (message);
 } 
-//se a hora for menor que 4, a mensagme fica vazia, pois não a mensagem prevista para imprimir.
+//se a hora for menor que 4, a mensagem fica vazia, pois não a mensagem prevista para imprimir.
 
 //operador ||, lê-se or
 const bebidaPrincipal =  'cafezinho';

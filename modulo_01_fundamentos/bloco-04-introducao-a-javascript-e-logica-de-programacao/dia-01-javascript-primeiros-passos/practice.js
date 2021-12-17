@@ -1,4 +1,4 @@
-//exercicio 1
+// exercício 1
 const a = 3;
 const b = 2;
 
@@ -13,7 +13,7 @@ console.log (multiplicar);
 console.log (dividir);
 console.log (modular);
 
-//exercicio 2
+// exercício 2
 const num1 = 3;
 const num2 = 7;
 
@@ -25,7 +25,7 @@ if (num1 > num2) {
 	console.log (num2)
 }
 
-//exercicio 3
+// exercício 3
 const num1 = 31;
 const num2 = 70;
 const num3 = 10;
@@ -38,7 +38,7 @@ if (num1 >= num2 && num1 >= num3) {
 	console.log (num3)
 }
 
-//exercicio 4
+// exercício 4
 const num1 = -1;
 
 if (num1 > 0) {
@@ -49,7 +49,7 @@ if (num1 > 0) {
 	console.log ('Zero')
 }
 
-//exercicio 5
+// exercício 5
 const ang1 = -1;
 const ang2 = 50;
 const ang3 = 80;
@@ -57,15 +57,15 @@ const ang3 = 80;
 if (ang1 + ang2 + ang3 === 180) {
 	console.log (true);
 } else if (ang1 < 0 || ang2 < 0 || ang3 < 0){
-	console.log ('Angulo negativo') 
+	console.log ('Ângulo negativo') 
 } else {
 	console.log (false)
 } 
 
-//exercicio 6
+// exercício 6
 let pecaXadrez = 'Cavalo';
 
-if (pecaXadrez.toLowerCase() == 'cavalo') {
+if (pecaXadrez.toLowerCase() == 'cavalo') { // é possível usar o switch/case pois há somente um parâmetro e não tem comparação
 	console.log ('Formato L');
 } else if (pecaXadrez.toLowerCase() === 'bispo') {
 	console.log ('Diagonal'); 
@@ -75,13 +75,13 @@ if (pecaXadrez.toLowerCase() == 'cavalo') {
 	console.log ('Diagonais e retas');
 } else if (pecaXadrez.toLowerCase() === 'torre') {
 	console.log ('Linhas retas');
-} else if (pecaXadrez.toLowerCase() === 'peao') {
+} else if (pecaXadrez.toLowerCase() === 'peão') {
 	console.log ('Na primeira jogada do peão, este pode avançar 2 casas, depois somente uma')
 } else {
 	console.log ('Não é uma peça de xadrez!')
 }
 
-//exercicio 7
+// exercício 7
 let grade = 80;
 
 if (grade <= 100 && grade >= 90) {
@@ -100,7 +100,7 @@ if (grade <= 100 && grade >= 90) {
 	console.log ('Número não se aplica a tabela')
 }
 
-//exercicio 8
+// exercício 8
 const num1 = 3;
 const num2 = 9;
 const num3 = 7;
@@ -111,7 +111,7 @@ if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0 ) {
 	console.log (false)
 }
 
-//exercicio 9
+// exercício 9
 const num1 = 10;
 const num2 = 10;
 const num3 = 10;
@@ -122,7 +122,7 @@ if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0 ) {
 	console.log (false)
 }
 
-//exercicio 10
+// exercício 10
 const custoProduto = 1;
 const valorVenda = 1;
 let quantidade = 1000;
@@ -135,7 +135,7 @@ if (custoProduto < 0 || valorVenda < 0 || quantidade < 0){
 } else {
 	console.log ('Lucro de ' + lucro + ' reais.')
 }
-//exercicio 11
+// exercício 11
 let salario = 3000.00;
 let imposto1 = 0.08;
 let imposto2 = 0.09;
