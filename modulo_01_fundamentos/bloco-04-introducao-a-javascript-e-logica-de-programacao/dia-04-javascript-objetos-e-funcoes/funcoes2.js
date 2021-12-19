@@ -1,6 +1,6 @@
 /*Pegue cada um dos exercícios de 1 a 5 do final do dia 4.1 e faça com que todos eles sejam funções de um mesmo arquivo. As variáveis que você define no começo de cada arquivo devem ser removidas e transformadas em parâmetros das funções.*/
 
-//exercicio 1
+// exercício 1
 function sum(a, b) {
 	return a + b;
 }
@@ -26,7 +26,7 @@ function mod(a, b) {
 }
 console.log(mod(2, 3));
 
-//exercicio 2
+// exercício 2
 function higher (a, b) {
 	if (a > b) {
 		return a;
@@ -38,7 +38,7 @@ function higher (a, b) {
 }
 console.log(higher(2, 2));
 
-//exercicio 3
+// exercício 3
 function higher(a, b, c) {
 	if (a > b && a > c) {
 		return "Maior número é a";
@@ -52,7 +52,7 @@ function higher(a, b, c) {
 }
 console.log(higher(7, 3, 5));
 
-//exercicio 4
+// exercício 4
 function boolean(num) {
 	if (num > 0){
 		return "Positive"
@@ -64,7 +64,7 @@ function boolean(num) {
 }
 console.log(boolean(-1));
 
-//exercicio 5
+// exercício 5
 function triangule(ang1, ang2, ang3) {
 	if (ang1 + ang2 + ang3 === 180){
 		return "true";

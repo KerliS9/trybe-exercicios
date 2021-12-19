@@ -1,7 +1,6 @@
-//exemplo 1
+// exemplo 1
 // Sem função
 let nome = 'João';
-
 console.log('Bom dia, ' + nome);
 
 // Com função
@@ -13,16 +12,14 @@ bomDiaTryber('João'); // Bom dia, João
 bomDiaTryber('Julia'); // Bom dia, Julia
 bomDiaTryber('Marcelo'); // Bom dia, Marcelo
 
-//exemplo 2 - funções sem parâmetros
+// exemplo 2 - funções sem parâmetros
 function bomDia() {
   return 'Bom dia!';
 }
-
 console.log(bomDia()); // Bom dia!
 
 
 let status = 'deslogado';
-
 function logarDeslogar() {
   if (status === 'deslogado') {
     status = 'logado';
@@ -30,7 +27,6 @@ function logarDeslogar() {
     status = 'deslogado';
   }
 }
-
 console.log(status); // deslogado
 
 logarDeslogar();
@@ -42,7 +38,7 @@ console.log(status); // deslogado
 console.log('O usuário está ' + status); // O usuário está deslogado
 
 
-//exemplo 3 - funções com parâmetros
+// exemplo 3 - funções com parâmetros
 // Com função
 function soma(a, b) {
   return a + b;
@@ -63,4 +59,3 @@ function maiorNum(primeiroNum, segundoNum) {
 console.log(maiorNum(10, 20)); // 20 é maior que 10
 console.log(maiorNum(2, -5)); // 2 é maior que -5
 console.log(maiorNum(1, 1)); // Os números são iguais
-

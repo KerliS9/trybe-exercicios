@@ -1,4 +1,4 @@
-//Exemplo 1
+// exemplo 1
 let diasDaSemana = {
 	1: 'domingo',
 	2: 'segunda',
@@ -11,9 +11,9 @@ let diasDaSemana = {
 	
 	//diasDaSemana.1; // SyntaxError: Unexpected number (comentei para sair o erro)
 	console.log(diasDaSemana['1']); // domingo
-	console.log(diasDaSemana[1]); //qdo a propriedade for do tipo number precisar usar colchetes para chamar.
+	console.log(diasDaSemana[1]); // qdo a propriedade for do tipo number precisar usar colchetes para chamar.
 
-//Exemplo 2 - formas de acessar os objetos dentro das chaves
+// exemplo 2 - formas de acessar os objetos dentro das chaves
 let conta = {
 	agencia: '0000',
 	banco: {
@@ -33,7 +33,7 @@ console.log(conta['agencia']); // 0000
 console.log(conta.banco.cod); // 012
 console.log(conta['banco']['id']); // 4
 
-//exemplo 3 - informações adicionadas de forma encadeada
+// exemplo 3 - informações adicionadas de forma encadeada
 let usuario = {
   id: 99,
   email: 'jakeperalta@gmail.com',
@@ -55,7 +55,7 @@ console.log(usuario.email); // jakeperalta@gmail.com
 console.log(usuario.infoPessoal.endereco.rua); // Smith Street
 console.log(usuario['infoPessoal']['endereco']['cidade']); // Nova Iorque
 
-//exemplo 4 - objetos dentro da array
+// exemplo 4 - objetos dentro da array
 let moradores = [
   {
     nome: 'Luiza',
@@ -91,7 +91,7 @@ let ultimoMorador = moradores[moradores.length - 1];
 console.log(ultimoMorador); // { nome: 'Zoey', sobrenome: 'Brooks', andar: 1, apartamento: 101 }
 console.log(ultimoMorador.nome); // Zoey
 
-//exercicio 1
+// exercício 1 - Crie um objeto player contendo as variáveis listadas abaixo
 let name = 'Marta';
 let lastName = 'Silva';
 let age = 34;
@@ -106,8 +106,10 @@ let player = {
 		silver: 3,
 	}
 }
+// exercício  - Acesse as chaves name , lastName e age e concatene as suas informações
 console.log('A jogadora ' + player.name + ' ' + player.lastName + ' tem ' + player.age + ' anos de idade.');
 
+// exercício  - Adicione ao objeto a chave bestInTheWorld e atribua a esta chave um array contendo as datas em que a jogadora Marta foi considerada a melhor do mundo
 let player = {
 	name: 'Marta',
 	lastName: 'Silva',
@@ -121,6 +123,9 @@ let player = {
 
 console.log(player.medalsEarn.bestInTheWorld);
 console.log('A jogadora ' + player.name + ' ' + player.lastName + ' foi eleita a melhor do mundo por 6 vezes.')
+
+// exercício 4 - Acesse a chave bestInTheWorld e faça um console.log 
 console.log('A jogadora ' + player.name + ' ' + player.lastName + ' foi eleita a melhor do mundo por ' + player.medalsEarn.bestInTheWorld.length + ' vezes.')
 
+// exercício 5 - Acesse a chave medals e faça um console.log 
 console.log('A jogadora possui ' + player.medalsEarn.golden + ' medalhas de ouro e ' + player.medalsEarn.silver + ' medalhas de prata.')
