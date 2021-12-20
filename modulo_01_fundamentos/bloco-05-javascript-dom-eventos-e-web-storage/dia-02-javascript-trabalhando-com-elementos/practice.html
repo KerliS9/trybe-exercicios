@@ -58,6 +58,84 @@
   <body>
     <script>
       // COLOQUE SEU CÓDIGO AQUI
+      // exercício 1 - Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body 
+      const tagH1 = document.createElement('h1');
+      tagH1.innerText = "Exercício 5.2 - JavaScript DOM"
+      document.body.appendChild(tagH1);
+
+      // exercício 2 - Adicione a tag main com a classe main-content como filho da tag body 
+      const tagMain = document.createElement('main');
+      tagMain.className = 'main-content';
+      document.body.appendChild(tagMain);
+      
+      // exercício 3 - Adicione a tag section com a classe center-content como filho da tag main criada no passo 2
+      const tagSection = document.createElement('section');
+      tagSection.className = 'center-content';
+      tagMain.appendChild(tagSection);
+
+      // exercício 4 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto
+      const p = document.createElement('p');
+      p.innerText = 'tag p - filha da section - exercício 4'
+      tagSection.appendChild(p);
+
+      // exercício 5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2
+      const tagSectionLeft = document.createElement('section');
+      tagSectionLeft.className = 'left-content';
+      tagMain.appendChild(tagSectionLeft);
+
+      // exercício 6 - Adicione a tag section com a classe right-content como filho da tag main criada no passo 2
+      const tagSectionRight = document.createElement('section');
+      tagSectionRight.className = 'right-content';
+      tagMain.appendChild(tagSectionRight);
+
+      // exercício 7 - Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5
+      const tagImg = document.createElement('img');
+      tagImg.className = 'small-image';
+      tagImg.src = 'https://picsum.photos/200';
+      tagSectionLeft.appendChild(tagImg);
+
+      // exercício 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      const tagUl = document.createElement('ul');
+      tagSectionRight.appendChild(tagUl);
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+      for(let i in arrayNumbers) {
+        const tagLi = document.createElement('li');
+        tagLi.innerHTML = arrayNumbers[i];
+        tagUl.appendChild(tagLi);
+      }
+
+      // exercício 9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+      for(let i = 0; i < 3; i += 1) {
+        const tagH3 = document.createElement('h3');
+        tagH3.innerHTML = 'Tags h3 ' + i;
+        tagMain.appendChild(tagH3);
+      }
+
+      // FAZENDO AJUSTES
+      // exercício 1 - Adicione a classe title na tag h1 criada
+      tagH1.className = 'title';
+
+      // exercício 2 - Adicione a classe description nas 3 tags h3 criadas
+      for(let i = 0; i < 3; i += 1){
+      tagH3[i].className = 'description';
+      tagH3.innerHTML = 'testando o arquivo'
+      }
+      
+      // exercício 3 - Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild
+      tagMain.removeChild(tagSectionLeft);
+      
+
+      // exercício 4 - Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section 
+      tagSectionRight.style.marginRight = 'auto';
+
+      // exercício 5 - Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde
+      const classCenter = document.getElementsByClassName('center-content')[0];
+      classCenter.parentNode.style.backgroundColor = 'green';
+
+      // exercício 6 - Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8
+      ul.lastChild.remove();
+      ul.lastChild.remove();
     </script>
   </body>
 </html>
