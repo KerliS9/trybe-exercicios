@@ -54,7 +54,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 4-4: _JavaScript - Objetos e Funções_
 - [X] 4-5: _[Projeto - Playground Functions](https://github.com/KerliS9/portfolio_kerli/tree/master/2-projectPlaygroundFunctions)_
 - [X] 4-6: _Revisão_
-- [] 4-7: _Bônus_
+- [X] 4-7: _Bônus_
 
 ##### [Bloco 5: JavaScrip: DOM, Eventos e Web Storage](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-01-javascript-dom-e-seletores)
 
