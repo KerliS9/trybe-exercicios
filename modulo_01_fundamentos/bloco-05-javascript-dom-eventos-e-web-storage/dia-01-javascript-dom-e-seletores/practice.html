@@ -42,16 +42,42 @@
       </section>
     </main>
     <script>
+      // Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos.
 			document.getElementsByTagName("p")[1].innerText = "Trabalhando com análise de dados";
+
+      // Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109))
 			document.querySelector(".main-content").style.backgroundColor = "rgb(76,164,109)";
+
+      // Crie uma função que mude a cor do quadrado vermelho para branco.
 			document.querySelector(".center-content").style.backgroundColor = "white";
+
+      // Crie uma função que corrija o texto da tag <h1>.
 			document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - JavaScript";
-			document.querySelectorAll("p")[0].style.textTransform = "upperCase";
+
+      // Crie uma função que modifique todo o texto da tag <p> para maiúsculo
+			/* document.querySelectorAll("p")[0].style.textTransform = "upperCase";
 			document.querySelectorAll("p")[1].style.textTransform = "upperCase";
-			document.querySelectorAll("p")[2].style.textTransform = "upperCase";
-			console.log(document.getElementsByTagName("p")[0].innerHTML);
+			document.querySelectorAll("p")[2].style.textTransform = "upperCase"; */
+			      
+      let parag = document.querySelectorAll("p");
+      function upper() {
+        for(let i = 0; i < parag.length; i += 1) {
+          parag[i].style.textTransform = "upperCase";
+        }
+      }
+      upper();
+
+      // Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+      function toShow() {
+        for(let i = 0; i < parag.length; i += 1) {
+          console.log(parag[i].innerHTML);
+        }
+      }
+      toShow();
+
+      /* console.log(document.getElementsByTagName("p")[0].innerHTML);
 			console.log(document.getElementsByTagName("p")[1].innerHTML);
-			console.log(document.getElementsByTagName("p")[2].innerHTML);
+			console.log(document.getElementsByTagName("p")[2].innerHTML); */
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
@@ -61,8 +87,8 @@
  ok - Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
  ok - Crie uma função que mude a cor do quadrado vermelho para branco.
  ok - Crie uma função que corrija o texto da tag <h1>.
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+ ok - Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+ ok - Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
     </script>
   </body>
