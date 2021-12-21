@@ -42,7 +42,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
-- [X] 3-5: _[Projeto - Lessons Learned]_
+- [X] 3-5: _[Projeto - Lessons Learned](https://github.com/KerliS9/portfolio_kerli/tree/master/1-projectLessonsLearned)_
 - [X] 3-6: _Revisão_
 
 ##### [Bloco 4: Introdução à JavaScript e Lógica de Programação](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-04-introducao-a-javascript-e-logica-de-programacao)
@@ -87,7 +87,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Primeiros passos em Jest_
-- [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [ ] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/KerliS9/portfolio_kerli/tree/master/6-projectJsUnitTests)_
 - [] 7-5: _Revisão_
 - [] 7-6: _Adicionais_
 
