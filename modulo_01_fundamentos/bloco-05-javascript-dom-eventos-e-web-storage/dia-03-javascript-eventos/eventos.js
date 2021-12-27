@@ -5,6 +5,7 @@ const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 
 
+
 // 1. Copie esse arquivo e edite apenas ele;
 // 1.1. Antes de começar os exercícios, use o LiveServer para dar uma olhada em como está a página no navegador.
 // 1.2. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
@@ -34,13 +35,36 @@ thirdLi.addEventListener('click', addClassTech);
 // elementLi.addEventListener('click', addClassTech);
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento com a classe 'tech';
+function replaceText(event) {
+  const newTech = document.querySelector('.tech');
+  console.log(newTech);
+  newTech.innerText = event.target.value;
+  console.log(newTech);
+}
+input.addEventListener('input', replaceText);
 
-// 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
-// redirecione para alguma página;
-// 4.1. Que tal redirecionar para seu portifólio?
+/* input.addEventListener('input', function(event) {
+  const techElement = document.querySelector('.tech');
+  techElement.innerText = event.target.value;
+}); */
 
-// 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
-// a cor do mesmo;
+// 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele redirecione para alguma página;
+// 4.1. Que tal redirecionar para seu portfólio?
+myWebpage.addEventListener('dblclick', function() {
+  window.location.assign('https://github.com/KerliS9');
+})
+
+/* myWebpage.addEventListener('dblclick', function() {
+  window.location.replace('https://blog.betrybe.com/');
+});
+ */
+// 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere a cor do mesmo;
+myWebpage.addEventListener('mouseover', function(event){
+  event.target.style.color = 'red';
+})
+myWebpage.addEventListener('mouseout', function(event) {
+  event.target.style.color = 'unset';
+}); // para retirar a cor qdo o mouse não estiver mais sobre o texto.
 
 // Segue abaixo um exemplo do uso de event.target:
 
