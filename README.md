@@ -68,8 +68,8 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [ ] 5-7: _[Projeto Bônus - Meme Generator]()_
 - [ ] 5-7: _[Projeto Bônus - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto Bônus - Carta Misteriosa]()_
-- [] 5-8: _Revisão_
-- [] 5-9: _Adicionais_
+- [X] 5-8: _Revisão_
+- [] 5-9: _Bônus_
 
 ##### [Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo)
 
