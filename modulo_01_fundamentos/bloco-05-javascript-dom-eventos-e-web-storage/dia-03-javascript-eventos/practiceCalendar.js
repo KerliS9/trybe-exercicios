@@ -84,16 +84,87 @@ function replaceText(array) {
 replaceText([4, 11, 18, 25]);
 
 // exercício 6 - Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
-const day = document.querySelectorAll('.day');
 function zoom() {
-
+  const day = document.querySelector('#days');
   day.addEventListener('mouseover', function(event){
     event.target.style.fontSize = '30px';
-    event.target.style.fontWeight = '600';
   })
+}
+zoom();
+
+function lessZoom(){
+  const day = document.querySelector('#days');
   day.addEventListener('mouseout', function(event) {
-    event.target.style.fontWeight = '200';
     event.target.style.fontSize = '20px';
   });
 }
+lessZoom();
 
+// exercício 7 - Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+
+function createTask(tasks) {
+const task = document.createElement('span');
+const divTasks = document.querySelector('.my-tasks');
+divTasks.appendChild(task);
+task.innerHTML = tasks;
+}
+createTask('Fazer calendário');
+
+// exercício 8 - Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
+function subtitle(color) {
+  const divTasks = document.querySelector('.my-tasks');
+  const sub = document.createElement('div');
+  sub.className = 'task';
+  divTasks.appendChild(sub);
+  sub.style.backgroundColor = color;
+}
+subtitle('red');
+
+// exercício 9 - Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
+/* function addClassSel(event) { // ERRO
+  let myTasks = document.querySelector('.task')
+  myTasks.addEventListener('click', function() {
+    if(myTasks.classList.contains('task')) {
+      event.target.classList.add('selected');
+    } else {
+      event.target.classList.remove('selected');
+    }
+  });
+}
+addClassSel(); */
+
+/* function setTaskClass() { // ERRO
+  let selectedTask = document.getElementsByClassName('task selected');
+  let myTasks = document.querySelector('.task');
+
+  myTasks.addEventListener('click', function(event) {
+    if (selectedTask.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  });
+};
+setTaskClass(); */
+
+// exercício 10 - Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
+/* function setDayColor() { // erro acima esta impactando nesta função.
+  let selectedTask = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;
+  
+  days.addEventListener('click', function(event){
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+};
+
+setDayColor(); */
+
+// bônus - Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".

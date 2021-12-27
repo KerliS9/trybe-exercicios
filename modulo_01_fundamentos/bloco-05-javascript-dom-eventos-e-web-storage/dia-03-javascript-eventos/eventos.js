@@ -64,7 +64,7 @@ myWebpage.addEventListener('mouseover', function(event){
 })
 myWebpage.addEventListener('mouseout', function(event) {
   event.target.style.color = 'unset';
-}); // para retirar a cor qdo o mouse não estiver mais sobre o texto.
+}); // para retirar a cor qdo o mouse não estiver mais sobre o 
 
 // Segue abaixo um exemplo do uso de event.target:
 
