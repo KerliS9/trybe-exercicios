@@ -114,26 +114,14 @@ createTask('Fazer calendário');
 function subtitle(color) {
   const divTasks = document.querySelector('.my-tasks');
   const sub = document.createElement('div');
-  sub.className = 'task';
+  sub.classList.add('task');
   divTasks.appendChild(sub);
   sub.style.backgroundColor = color;
 }
 subtitle('red');
 
 // exercício 9 - Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
-/* function addClassSel(event) { // ERRO
-  let myTasks = document.querySelector('.task')
-  myTasks.addEventListener('click', function() {
-    if(myTasks.classList.contains('task')) {
-      event.target.classList.add('selected');
-    } else {
-      event.target.classList.remove('selected');
-    }
-  });
-}
-addClassSel(); */
-
-/* function setTaskClass() { // ERRO
+function setTaskClass() { 
   let selectedTask = document.getElementsByClassName('task selected');
   let myTasks = document.querySelector('.task');
 
@@ -145,10 +133,10 @@ addClassSel(); */
     }
   });
 };
-setTaskClass(); */
+setTaskClass();
 
 // exercício 10 - Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
-/* function setDayColor() { // erro acima esta impactando nesta função.
+function setDayColor() { // erro acima esta impactando nesta função.
   let selectedTask = document.getElementsByClassName('task selected');
   let days = document.querySelector('#days');
   let taskDiv = document.querySelector('.task');
@@ -165,6 +153,16 @@ setTaskClass(); */
   });
 };
 
-setDayColor(); */
+setDayColor();
 
 // bônus - Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
+const btnAdd = document.querySelector('#btn-add');
+function addEvents() {
+  const events = document.createElement('p');
+  const list = document.querySelector('.task-list');
+  const input = document.querySelector('#task-input');
+  list.appendChild(events);
+  events.innerText = input.value
+  input.value = '';
+}
+btnAdd.addEventListener('click', addEvents);
