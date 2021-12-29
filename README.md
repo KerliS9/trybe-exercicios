@@ -69,7 +69,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [ ] 5-7: _[Projeto Bônus - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto Bônus - Carta Misteriosa]()_
 - [X] 5-8: _Revisão_
-- [X] 5-9: _Bônus_
+- [] 5-9: _Bônus_
 
 ##### [Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo)
 
@@ -80,7 +80,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 6-5: _CSS Responsivo - Mobile First_
 - [X] 6-6: _[Projeto - Trybewarts](https://github.com/KerliS9/portfolio_kerli/tree/master/5-projectTrybewarts)_
 - [] 6-7: _Revisão_
-- [] 6-8: _Adicionais_
+- [] 6-8: _Bônus_
 
 ##### Bloco 7: Introdução à JavaScript ES6 & Testes Unitários
 

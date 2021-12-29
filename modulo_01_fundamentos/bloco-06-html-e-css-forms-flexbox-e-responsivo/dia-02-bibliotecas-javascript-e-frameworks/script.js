@@ -1,15 +1,6 @@
-import './node_modules/just-validate/dist/js/just-validate.js'
+// import './node_modules/just-validate/dist/js/just-validate.js'
 
-// const btnEnviar = document.getElementById('enviar');
-
-// btnEnviar.addEventListener('click', () => {
-// 	const divBotao = document.querySelector('div.botao')
-// 	console.log(divBotao);
-// 	const objBotao = new bootstrap.Modal(divBotao);
-// 	obj.show();
-// });
-
-// document.getElementById('enviar').DatePickerX.init();
+// erro ....
 
 const estados = { 
 	'AC': 'Acre',
@@ -52,10 +43,36 @@ function criaOptions() {
 	}
 }
 
+const validation = new JustValidate('.form-check');
+
+validation
+  .addField('#name', [
+    {
+      rule: 'minLength',
+      value: 3,
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+    },
+  ])
+  .addField('#email', [
+    {
+      rule: 'required',
+      errorMessage: 'Email is required',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Email is invalid!',
+    },
+  ]);
 
 
 window.onload = function () {
 	criaOptions();
+  // new JustValidate('.form-check');
+  const validate = new window.JustValidate('.form-check');
+
 }
 
 /* 3. Logo abaixo do formulário, crie um botão que:
@@ -63,4 +80,5 @@ Chame uma função JavaScript e interrompa o fluxo automático do form utilizand
 Implemente, agora, no Javascript , as validações que foram pedidas ao longo da montagem do formulário.
 Caso todos os dados sejam válidos, monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
 Caso haja algum dado inválido, mostre em uma <div> uma mensagem de erro. Se o erro for na Data de Início , a mensagem deve ser contextualizada.
+
 4. Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também. */
