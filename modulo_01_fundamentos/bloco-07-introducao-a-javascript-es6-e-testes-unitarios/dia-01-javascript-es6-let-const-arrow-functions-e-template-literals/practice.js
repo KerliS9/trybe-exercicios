@@ -1,4 +1,4 @@
-/* //função normal
+//função normal
 function testingScope(escopo) {
 	if (escopo === true) {
 		var ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
@@ -24,7 +24,7 @@ const testingScope = escopo => {
 		console.log(elseScope);
 	}
 }
-testingScope(true); */
+testingScope(true);
 
 
 //template literals
