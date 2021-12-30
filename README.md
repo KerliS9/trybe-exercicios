@@ -79,7 +79,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 6-4: _CSS Flexbox - Part 2_
 - [X] 6-5: _CSS Responsivo - Mobile First_
 - [X] 6-6: _[Projeto - Trybewarts](https://github.com/KerliS9/portfolio_kerli/tree/master/5-projectTrybewarts)_
-- [] 6-7: _Revisão_
+- [X] 6-7: _Revisão_
 - [] 6-8: _Bônus_
 
 ##### Bloco 7: Introdução à JavaScript ES6 & Testes Unitários
