@@ -12,6 +12,8 @@ const repeat = (number, action) => { // parâmetro number, condição action
 };
 repeat(5, console.log);
 
+// ---------------------
+
 const repeat = (number, action) => {
   for (let count = 0; count <= number; count += 1) {
     action(count);
@@ -22,6 +24,8 @@ repeat(3, (number) => { // 3 é o parâmetro da função
     console.log(number, 'is even');
   }
 });
+
+// ----------------------
 
 const repeat = (number, action) => {
   for (let count = 0; count <= number; count += 1) {
@@ -40,6 +44,8 @@ const isOdd = (number) => {
 };
 repeat(3, isEven); // Testa quais números serão pares;
 repeat(3, isOdd); // Testa quais números serão ímpares;
+
+// ---------------------
 
 const numberGenerator = () => {
   return Math.random() * 100;

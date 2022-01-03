@@ -15,9 +15,8 @@ const sayHello = () => {
 }
 
 const printGreeting = (callback) => {
-    console.log(callback());
+  console.log(callback());
 }
-
 printGreeting(sayHello);
 
 // Retornar uma função de outra função
