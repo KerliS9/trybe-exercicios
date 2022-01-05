@@ -20,17 +20,22 @@ console.log(thirdCountry); // China
 console.log(fourthCountry); // Canada
 
 console.log('//---------------');
-
-
 // exercício 1 - Produza o mesmo resultado do código, porém utilizando o array destructuring para recolher a função e a saudação.
-const saudacoes = ['Olá', (saudacao) => console.log(saudacao)];
-saudacoes[1](saudacoes[0]); // Olá
+const saudacoes = ['Olá', (saudacao) => console.log('console 0', saudacao)]; // um array normal separado por vírgulas no index
+saudacoes[1](saudacoes[0]); // posição 1 é a função dentro do array (=>), posição 0 é a palavra 'olá'
+// console.log('console 1', saudacoes); // ['Olá', [function (anonymous)]]
+
+
+const teste = (saudacao) => console.log('console teste', saudacao);
+const variavel = 'Olá';
+teste(variavel);
 
 // Produza o mesmo resultado acima, porém utilizando array destructuring
+const [frase, funcao] = saudacoes;
+funcao(frase);
 const [saudacao, realizaSaudacao] = saudacoes;
-console.log(realizaSaudacao(saudacao));
-
-
+// console.log('console 3', saudacoes); // [ 'Olá', [Function (anonymous)] ]
+realizaSaudacao(saudacao);
 
 console.log('//---------------');
 // exercício 2 - A seguir, temos alguns valores que estão descritos em variáveis incoerentes. Através da desestruturação de arrays, corrija os valores das variáveis.

@@ -78,8 +78,10 @@ console.log('//---------------');
 const palio = ['Palio', 'Fiat', 2019];
 const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
 const chiron = ['Chiron', 'Bugatti', 2016];
-// const toObject = ([model, brand, year]) => ({model, brand, year});
-// console.log(toObject());
+const toObject = ([model, brand, year]) => ({model, brand, year});
+console.log(toObject(palio));
+console.log(toObject(shelbyCobra));
+console.log(toObject(chiron));
 
 console.log('//---------------');
 // exercício 7 - Escreva uma função shipLength que, dado um objeto representando um navio, retorna o comprimento dele, mostrando também a devida unidade de comprimento:
