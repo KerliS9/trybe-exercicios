@@ -1,5 +1,5 @@
 const { getPokemonDetails } = require("./getPokemonDetails");
-
+// erro nos testes
 describe("A função getPokemonDetails", () => {
   it("retorna erro quando procuramos um pokemon que não existe no banco de dados", (done) => {
     const expectedError = new Error('Não temos esse pokémon para você :(');
