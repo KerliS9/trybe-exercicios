@@ -104,12 +104,12 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 
 ##### Bloco 9: JavaScript e Testes Assíncronos
 
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
+- [X] 9-1: _JavaScript Assíncrono e Callbacks_
+- [X] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [ ] 9-3: _Jest - Testes Assíncronos_
 - [ ] 9-4: _[Projeto - Carrinho de Compras]()_
 - [] 9-5: _Revisão_
-- [] 9-6 _Adicionais_
+- [X] 9-6 _Bonus_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
