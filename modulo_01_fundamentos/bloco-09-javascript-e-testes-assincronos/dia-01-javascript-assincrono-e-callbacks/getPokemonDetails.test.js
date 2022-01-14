@@ -2,7 +2,7 @@ const { getPokemonDetails } = require("./getPokemonDetails");
 // erro nos testes
 describe("A função getPokemonDetails", () => {
   it("retorna erro quando procuramos um pokemon que não existe no banco de dados", (done) => {
-    const expectedError = new Error('Não temos esse pokémon para você :(');
+    const expectedError = new Error('Não temos esse pokemon para você :(');
 
     function callback(error, result) {
       expect(error).toEqual(expectedError);
@@ -13,7 +13,7 @@ describe("A função getPokemonDetails", () => {
   });
 
   it("retorna um pokemon que existe no banco de dados", (done) => {
-    const expectedString = 'Olá, seu pokémon é o Charmander, o tipo dele é Fire e a habilidade principal dele é Ember';
+    const expectedString = 'Olá, seu pokemon é o Charmander, o tipo dele é Fire e a habilidade principal dele é Ember';
 
     function callback(err, result) {
       expect(result).toBe(expectedString);
