@@ -106,8 +106,8 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 
 - [X] 9-1: _JavaScript Assíncrono e Callbacks_
 - [X] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
-- [ ] 9-3: _Jest - Testes Assíncronos_
-- [ ] 9-4: _[Projeto - Carrinho de Compras]()_
+- [X] 9-3: _Jest - Testes Assíncronos_
+- [X] 9-4: _[Projeto - Carrinho de Compras]()_
 - [] 9-5: _Revisão_
 - [X] 9-6 _Bonus_
 
@@ -115,35 +115,45 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 
 ##### Bloco 10: Introdução à React
 
-- [ ] 10-1: _Introdução - Front-end_
-- [ ] 10-1: _Introdução - React_
-- [ ] 10-1: _'Hello, world!' no React!_
-- [ ] 10-2: _Componentes React_
-- [ ] 10-3: _[Projeto - Sistema Solar]()_
+- [X] 10-1: _Introdução - Front-end_
+- [X] 10-1: _Introdução - React_
+- [X] 10-1: _'Hello, world!' no React!_
+- [X] 10-2: _Componentes React_
+- [X] 10-3: _[Projeto - Sistema Solar]()_
+- [] 10-4: _Revisão_
+- [] 10-5 _Bonus_
 
 ##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
-- [ ] 11-1: _Componentes com Estado e Eventos_
-- [ ] 11-2: _Formulários no React_
-- [ ] 11-3: _[Projeto - Triunfo]()_
+- [X] 11-1: _Componentes com Estado e Eventos_
+- [X] 11-2: _Formulários no React_
+- [X] 11-3: _[Projeto - Triunfo]()_
+- [] 11-4: _Revisão_
+- [] 11-5 _Bonus_
 
 ##### Bloco 12: Ciclo de vida de componentes e React Router
 
-- [ ] 12-1: _Ciclo de vida de componentes_
-- [ ] 12-2: _React Router_
-- [ ] 12-3: _[Projeto - TrybeTunes]()_
+- [X] 12-1: _Ciclo de vida de componentes_
+- [X] 12-2: _React Router_
+- [X] 12-3: _[Projeto - TrybeTunes]()_
+- [] 12-4: _Revisão_
+- [] 12-5 _Bonus_
 
 ##### Bloco 13: Metodologias Ágeis
 
-- [ ] 13-1: _Metodologias Ágeis_
-- [ ] 13-2: _[Projeto - Frontend Online Store]()_
+- [X] 13-1: _Metodologias Ágeis_
+- [X] 13-2: _[Projeto - Frontend Online Store]()_
+- [] 13-3: _Revisão_
+- [] 13-4 _Bonus_
 
 ##### Bloco 14: Testes automatizados com React Testing Library
 
-- [ ] 14-1: _RTL - Primeiros passos_
-- [ ] 14-2: _RTL - Mocks e Inputs_
-- [ ] 14-3: _RTL - Testando React Router_
-- [ ] 14-4: _[Projeto - Testes em React]()_
+- [X] 14-1: _RTL - Primeiros passos_
+- [X] 14-2: _RTL - Mocks e Inputs_
+- [X] 14-3: _RTL - Testando React Router_
+- [X] 14-4: _[Projeto - Testes em React]()_
+- [] 14-5: _Revisão_
+- [] 14-6 _Bonus_
 
 ##### Bloco 15: Gerenciamento de estado com Redux
 
@@ -153,6 +163,8 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [ ] 15-4: _Usando o Redux no React - Actions Assíncronas_
 - [ ] 15-5: _Testes em React-Redux_
 - [ ] 15-6: _[Projeto - Trybe Wallet]()_
+- [] 15-7: _Revisão_
+- [] 15-8 _Bonus_
 
 ##### Bloco 16: Projeto Jogo de Trivia
 
