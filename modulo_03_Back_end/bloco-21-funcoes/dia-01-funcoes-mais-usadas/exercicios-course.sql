@@ -115,5 +115,16 @@ SELECT rating, SUM(replacement_cost)
 	FROM sakila.film
 	GROUP by rating;
 SELECT COUNT(first_name) AS status FROM sakila.customer GROUP BY active;
+USE sakila;
 SELECT * FROM customer;
-SELECT store_id, COUNT(active) 
+SELECT store_id, active, COUNT(*) FROM customer GROUP BY active;
+SELECT AVG(rental_duration),rating FROM film GROUP BY rating ORDER BY rental_duration DESC;
+SELECT district, COUNT(*) FROM address GROUP BY district ORDER BY COUNT(*) DESC;
+
+SELECT rating, AVG(length) AS duracao_media
+    FROM sakila.film
+    GROUP BY rating HAVING duracao_media BETWEEN 115.0 AND 121.5 ORDER BY duracao_media DESC;
+
+SELECT rating, SUM(replacement_cost) AS custo_reproducao
+    FROM sakila.film
+    GROUP by rating HAVING custo_reproducao > 3950.50 ORDER BY custo_reproducao DESC;
