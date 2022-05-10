@@ -1,4 +1,5 @@
 const fs = require('fs').promises;
+console.log(fs);
 
 const simpsons = './simpsons.json';
 
@@ -57,11 +58,11 @@ function main() {
 main(); */
 
 // 4.d Crie uma função que leia o arquivo simpsons.json e crie um novo arquivo, chamado simpsonFamily.json, contendo as personagens com id de 1 a 4.
-async function readWriteSimpsons() {
+/* async function readWriteSimpsons() {
   const reading = await fs.readFile(simpsons);
     const simpsonsRead = JSON.parse(reading);
     console.log(simpsonsRead);
-    await fs.writeFile('./simpsonsNewArray.json', JSON.stringify(simpsonsRead));
+    await fs.writeFile('./simpsonFamily.json', JSON.stringify(simpsonsRead));
     const familyIds = [1, 2, 3, 4];
     const simpsonsFamily = simpsonsRead
       .filter((simpson) => familyIds.includes(Number(simpson.id)));
@@ -72,5 +73,37 @@ function main() {
   readWriteSimpsons();
 }
 
-main();
+main(); */
 
+// 4.e Crie uma função que adicione ao arquivo simpsonFamily.json o personagem Nelson Muntz.
+/* async function addNewSimpson() {
+  const reading = await fs.readFile(simpsons);
+    const simpsonsRead = JSON.parse(reading);
+    console.log(simpsonsRead);
+    simpsonsRead.push({ id: '11', name: 'Nelson Muntz' });
+    await fs.writeFile('./simpsonFamily.json', JSON.stringify(simpsonsRead));
+  }
+
+function main() {
+  addNewSimpson();
+}
+
+main(); */
+
+// 4.f Crie uma função que substitua o personagem Nelson Muntz pela personagem Maggie Simpson no arquivo simpsonFamily.json.
+const simpsonFamily = './simpsonFamily.json'
+async function replaceSimpson() {
+  const reading = await fs.readFile(simpsonFamily);
+    const simpsonsRead = JSON.parse(reading);
+    console.log(simpsonsRead);
+    const simpsonsfilter = simpsonsRead.filter(simpson => simpson.name !== 'Nelson Muntz');
+    console.log(simpsonsfilter);
+    simpsonsfilter.push({ id: '12', name: 'Maggie Simpson' });
+    await fs.writeFile('./simpsonFamily2.json', JSON.stringify(simpsonsfilter));
+  }
+
+function main() {
+  replaceSimpson();
+}
+
+main();
