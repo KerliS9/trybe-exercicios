@@ -9,7 +9,7 @@ const NOME_DO_ARQUIVO = 'VQV com TDD';
 describe('execute a função nomeDoArquivo', () => {
   describe('Quando o arquivo existe', () => {
     before(() => {
-      sinon.stub(fs, 'readFileSync').returns(NOME_DO_ARQUIVO);
+      sinon.stub(fs, 'readFileSync').returns(NOME_DO_ARQUIVO); // dentro do objeto fs, na função readFileSync, mockar o returno NOME_DO_ARQUIVO
       // sinon.stub(fs, 'writeFileSync');
     });
 
@@ -25,7 +25,7 @@ describe('execute a função nomeDoArquivo', () => {
         expect(resposta).to.be.a('string');
       });
 
-      it('é igual a OK', () => {
+      it('é igual a VQV com TDD', () => {
         const resposta = nomeDoArquivo('arquivo.txt', 'VQV com TDD');
 
         expect(resposta).to.be.equals('VQV com TDD');
@@ -33,7 +33,7 @@ describe('execute a função nomeDoArquivo', () => {
     });
   });
   describe('Quando o arquivo não existe', () => {
-    /* before(() => {
+    before(() => {
       sinon
         .stub(fs, 'readFileSync')
         .throws(new Error('Arquivo não encontrado'));
@@ -41,7 +41,7 @@ describe('execute a função nomeDoArquivo', () => {
 
     after(() => {
       fs.readFileSync.restore();
-    }); */
+    });
 
     describe('a resposta', () => {
       it('é igual a "null"', () => {
