@@ -41,3 +41,16 @@ describe('Verifica a função numberStatus, se retorno é string e negativo', ()
       expect(resposta).to.be.equals('neutro');
     });
 });
+
+describe('Verifica a função numberStatus, está recebendo input diferente de números', () => {
+  it('retorna "string"', () => {
+    const resposta = numberStatus('a');
+
+    expect(resposta).to.be.a('string');
+  });
+  it('retorna o erro - o valor deve ser um número', () => {
+    const resposta = numberStatus('a');
+
+    expect(resposta).to.be.equals('o valor deve ser um número');
+  });
+});
