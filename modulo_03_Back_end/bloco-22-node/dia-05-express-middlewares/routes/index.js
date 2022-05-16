@@ -12,8 +12,8 @@ routes.use(pr.inform);
 routes.use(pr.date);
 routes.use(pr.warranty); */
 
-routes.post("/sales", pr.products, pr.inform, pr.date, pr.warranty, function (req, res) {
-  // const { productName, infos } = req.body;  
+routes.post("/sales", user.auth, pr.products, pr.inform, pr.date, pr.warranty, function (req, res) {
+  // const { productName, infos } = req.body;
   return res.status(201).json({ message: "Venda cadastrada com sucesso" });
 });
 
