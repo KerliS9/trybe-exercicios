@@ -30,8 +30,15 @@ const getAllUsers = async () => {
 	return rows.map(serialize);
 };
 
+const getUserById = async (id) => {
+	const query = 'SELECT id, first_name, last_name, email, password FROM users_crud.users WHERE id = ?;'
+	const [rows] = await connectionUser.execute( query, [id]);
+	return rows.map(serialize);
+};
+
 module.exports = {
   isUserDataValid,
   createUser,
-  getAllUsers
+  getAllUsers,
+	getUserById
 };
