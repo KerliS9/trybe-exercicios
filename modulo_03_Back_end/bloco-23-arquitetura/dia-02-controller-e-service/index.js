@@ -1,13 +1,15 @@
 const express = require('express');
 
-const Author = require('./controllers/Author');
+// const Author = require('./controllers/Author');
 
 const app = express();
 app.use(express.json());
 
-app.get('/authors', Author.getAll);
+/* app.get('/authors', Author.getAll);
 app.get('/authors/:id', Author.findById);
-app.post('/authors', Author.create);
+app.post('/authors', Author.create); */
+// routes = require('./routes');
+app.use(require('./routes'))
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
