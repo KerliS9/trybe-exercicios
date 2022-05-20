@@ -1,9 +1,19 @@
 const mysql = require('mysql2/promise');
+require('dotenv').config();
 
 const connection = mysql.createPool({
-	host: 'localhost',
-	user: 'root',
-	password: 'kerli5678',
-	database: 'model_example' });
+	host: process.env.DB_HOST,
+	user: process.env.DB_USER,
+	password: process.env.DB_PASSWORD,
+	database: process.env.DB_DATABASE });
 
-module.exports = connection;
+const connectionUser = mysql.createPool({
+	host: process.env.DB_HOST,
+	user: process.env.DB_USER,
+	password: process.env.DB_PASSWORD,
+	database: 'users_crud' });
+
+module.exports = {
+	connection,
+	connectionUser,
+};

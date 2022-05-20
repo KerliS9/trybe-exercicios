@@ -1,4 +1,4 @@
-const connection = require('./connection');
+const { connection } = require('./connection');
 
 // Cria uma string com o nome completo do autor
 const getNewAuthor = ({id, firstName, middleName, lastName}) => {
@@ -33,6 +33,42 @@ const getAll = async () => {
 	return authors.map(serialize).map(getNewAuthor);
 };
 
+const getAuthorById = async (id) => {
+	// Repare que substituímos o id por `?` na query.
+	// Depois, ao executá-la, informamos um array com o id para o método `execute`.
+	// O `mysql2` vai realizar, de forma segura, a substituição do `?` pelo id informado.
+	const query = 'SELECT first_name, middle_name, last_name FROM model_example.authors WHERE id = ?'
+	const [ authorData ] = await connection.execute(query, [id]);
+
+	if (authorData.length === 0) return null;
+
+	// Utilizamos [0] para buscar a primeira linha, que deve ser a única no array de resultados, pois estamos buscando por ID.
+	const { firstName, middleName, lastName } = authorData.map(serialize)[0];
+
+	return getNewAuthor({
+		id,
+		firstName,
+		middleName,
+		lastName,
+	});
+};
+
+const isValidDataAuthor = (firstName, middleName, lastName) => {
+	if (!firstName || typeof firstName !== 'string') return false;
+	if (!lastName || typeof lastName !== 'string') return false;
+	if (middleName && typeof middleName !== 'string') return false;
+
+	return true;
+};
+
+const createAuthor = async (firstName, middleName, lastName) => await connection.execute(
+	'INSERT INTO model_example.authors (first_name, middle_name, last_name) VALUES (?,?,?)',
+	[firstName, middleName, lastName],
+);
+
 module.exports = {
 	getAll,
+  getAuthorById,
+  isValidDataAuthor,
+  createAuthor,
 };
