@@ -1,15 +1,15 @@
 // const User = require('../models/User');
-const Joi = require('joi');
+/* const Joi = require('joi');
 
 const validateDataToCreateUser = Joi.object({
 	firstName: Joi.string().required(),
 	lastName: Joi.string().required(),
 	email: Joi.string().email().required(),
-	password: Joi.string().min(6).required()});
+	password: Joi.string().min(6).required()})/* .validate({ firstName, lastName, email, password }) */;
 
-	module.exports = {
+	/* module.exports = {
 		validateDataToCreateUser
-	}
+	} */
 
 	// validateDataToCreateUser.validate(User.createUser);
 	/* .messages({
