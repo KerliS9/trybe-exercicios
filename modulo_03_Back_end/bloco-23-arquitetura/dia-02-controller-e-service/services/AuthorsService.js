@@ -1,4 +1,4 @@
-const Author = require('../models/Author');
+const Author = require('../models/AuthorModel');
 const { isValid } = require('../schemas/AuthorSchema');
 
 /* const getNewAuthor = (authorData) => {
@@ -38,8 +38,15 @@ const getAll = async () => {
 
 const findById = async (id) => {
   const author = await Author.findById(id);
-  if (!author) return null;
-  return getNewAuthor(author);
+  if (!author) {
+    return {
+      error: {
+        code: 'notFound',
+        message: `Não foi possível encontrar uma pessoa autora com o id ${id}`,
+      },
+    };
+  }
+  return author;
 };
 
 const createAuthor = async (firstName, middleName, lastName) => {
@@ -69,7 +76,7 @@ const createAuthor = async (firstName, middleName, lastName) => {
     firstName,
     middleName,
     lastName,
-  }); */
+  }); */ //dado é tratado na camada de models
 };
 
 module.exports = {
