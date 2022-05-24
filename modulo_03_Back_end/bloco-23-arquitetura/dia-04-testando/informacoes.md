@@ -1,0 +1,1 @@
+Habitualmente, podemos executar todos os testes contidos numa pasta utilizando o comando mocha <suaPastaDeTestes> --recursive, assim como podemos também definir um padrão de arquivos de teste, como mocha .<suaPastaDeTestes>/**/*.test.js, que executará todos os arquivos com final test.js dentro da sua pasta de testes.
