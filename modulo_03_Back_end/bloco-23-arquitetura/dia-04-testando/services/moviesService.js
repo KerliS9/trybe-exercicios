@@ -28,6 +28,21 @@ const create = async ({ title, directedBy, releaseYear }) => {
   };
 };
 
+const getMovieById = async (id) => {
+  const movie = await MoviesModel.getMovieById(id);
+  console.log('service', movie);
+  if (movie.length === 0) {
+    return {
+      error: {
+        code: 'notFound',
+        message: `Não foi possível encontrar um filme com o id ${id}`,
+      },
+    };
+  }
+  return movie.map(changedToCamelCase);
+}
+
 module.exports = {
   create,
+  getMovieById,
 };

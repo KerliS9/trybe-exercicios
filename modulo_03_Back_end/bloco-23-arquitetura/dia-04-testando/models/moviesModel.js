@@ -13,6 +13,22 @@ const createMovie = async ({ title, directedBy, releaseYear }) => {
   };
 };
 
+const getMovieById = (id) => {
+  const query = 'SELECT id, title, directed_by, releaseYear FROM db_movies.movies WHERE id = ?;';
+  const [movie] = connectionMovies.execute(query, [id]);
+  console.log('model', movie);
+  if(movie.length === 0) return null;
+  const { title, directedBy, releaseYear } = movie[0];
+
+  return {
+    id,
+    title,
+    directedBy,
+    releaseYear,
+  };
+}
+
 module.exports = {
   createMovie,
+  getMovieById,
 };
