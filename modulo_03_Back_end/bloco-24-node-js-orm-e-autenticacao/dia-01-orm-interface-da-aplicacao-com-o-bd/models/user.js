@@ -22,14 +22,14 @@ module.exports = (sequelize, DataTypes) => {
   return User;
 }; */
 
-const User = (sequelize, DataTypes) => {
-  const User = sequelize.define("User", {
+const UserSchema = (sequelize, DataTypes) => {
+  const UserTable = sequelize.define("User", {
     fullName: DataTypes.STRING,
     email: DataTypes.STRING,
     phone_num: DataTypes.STRING,
   });
 
-  return User;
+  return UserTable;
 };
 
-module.exports = User;
+module.exports = UserSchema;
