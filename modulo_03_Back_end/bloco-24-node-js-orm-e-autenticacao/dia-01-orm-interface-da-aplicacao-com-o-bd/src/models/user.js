@@ -28,6 +28,13 @@ const UserSchema = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     phone_num: DataTypes.STRING,
   });
+// para a model e a tabela no banco de dados sejas iguais, adiciona um terceiro parâmetro na UserTable
+// }, { freezeTableName: true });
+// outra forma é alterar o nome da tabela, o banco lerá a informação que esta na tableName
+// }, { tableName: "teste" });
+
+// se usar snake_case na migrations e no seeds, será necessário acrescentar este parâmetro ao model
+// }, { underscored: true });
 
   return UserTable;
 };

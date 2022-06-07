@@ -10,6 +10,7 @@ module.exports = {
       },
       fullName: {
         type: Sequelize.STRING
+        // field: full_name, este formato é o ideal para criar a coluna no db
       },
       email: {
         type: Sequelize.STRING
@@ -17,10 +18,12 @@ module.exports = {
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
+        // field: 'created_at'
       },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
+        // field: 'updated_at'
       }
     });
   },
