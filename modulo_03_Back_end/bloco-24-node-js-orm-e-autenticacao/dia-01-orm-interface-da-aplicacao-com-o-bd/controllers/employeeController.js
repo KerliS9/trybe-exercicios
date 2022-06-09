@@ -1,6 +1,9 @@
 // index.js
 const express = require('express');
 const { Address, Employee } = require('../src/models');
+const Sequelize = require('sequelize');
+const config = require('../src/config/config');
+const sequelize = new Sequelize(process.env.NODE_ENV === 'test' ? config.test : config.development);
 
 const routerEmployee = express.Router();
 
@@ -64,5 +67,40 @@ routerEmployee.get('/', async (_req, res) => {
 
 /* const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}`)); */
+
+// -------------------// usando unmanaged transaction
+routerEmployee.post('/', async (req, res) => {
+  // Primeiro iniciamos a transação
+  const t = await sequelize.transaction();
+
+  try {
+    const { firstName, lastName, age, city, street, number } = req.body;
+
+    // Depois executamos as operações
+    const employee = await Employee.create(
+      { firstName, lastName, age },
+      { transaction: t },
+    );
+
+    await Address.create(
+      { city, street, number, employeeId: employee.id },
+      { transaction: t },
+    );
+
+    // Se chegou até essa linha, quer dizer que nenhum erro ocorreu.
+    // Com isso, podemos finalizar a transação usando a função `commit`.
+    await t.commit();
+
+    return res.status(201).json({ 
+      id: employee.id,
+      message: 'Cadastrado com sucesso' });
+  } catch (e) {
+    // Se entrou nesse bloco é porque alguma operação falhou.
+    // Nesse caso, o sequelize irá reverter as operações anteriores com a função rollback, não sendo necessário fazer manualmente
+    await t.rollback();
+    console.log(e.message);
+    res.status(500).json({ message: 'Algo deu errado' });
+  }
+});
 
 module.exports = routerEmployee;
