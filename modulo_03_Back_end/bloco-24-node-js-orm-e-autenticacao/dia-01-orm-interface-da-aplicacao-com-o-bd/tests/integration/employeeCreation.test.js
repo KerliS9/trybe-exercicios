@@ -4,7 +4,7 @@ const chai = require('chai');
 const { stub } = require('sinon');
 const chaiHttp = require('chai-http');
 
-const { Employee } = require('../../src/models');
+const { Employee, Address } = require('../../src/models');
 const { Employee: employeeMock } = require('../mock/models');
 
 chai.use(chaiHttp);
@@ -155,6 +155,8 @@ describe('Rota POST /employees', () => {
   before(() => {
     stub(Employee, 'create')
       .callsFake(employeeMock.create);
+    stub(Address, 'create')
+      .callsFake(employeeMock.create);
       // console.log('test function', employeeMock.create);
     stub(Employee, 'findAll')
       .callsFake(employeeMock.findAll);
@@ -186,7 +188,7 @@ describe('Rota POST /employees', () => {
       .request(server)
       .post('/employees')
       .send(newUser);
-      console.log('test', createRequest);
+      // console.log('test createRequest', createRequest.body);
     secondUserList = await chai
       .request(server)
       .get('/employees');
@@ -210,14 +212,14 @@ describe('Rota POST /employees', () => {
       .to.have.property('message');
   });
 
-  it('createRequest: A propriedade "message" possui o texto "Novo usuário criado com sucesso"',
+  it('createRequest: A propriedade "message" possui o texto "Cadastrado com sucesso"',
   () => {
     expect(createRequest.body.message)
-      .to.be.equal('Novo usuário criado com sucesso');
+      .to.be.equal('Cadastrado com sucesso');
   }
   );
 
-  it('secondUserList: A segunda requisição GET para rota deve retornar, por tanto, 3 registros', () => {
+  it('secondUserList: A segunda requisição GET para rota deve retornar, por tanto, 5 registros', () => {
     expect(secondUserList.body).to.have.length(5);
   });
 

@@ -68,8 +68,31 @@ routerEmployee.get('/', async (_req, res) => {
 /* const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}`)); */
 
-// -------------------// usando unmanaged transaction
 routerEmployee.post('/', async (req, res) => {
+  try {
+    const { firstName, lastName, age, city, street, number } = req.body;
+
+    // Depois executamos as operações
+    const employee = await Employee.create(
+      { firstName, lastName, age }
+    );
+
+    await Address.create(
+      { city, street, number, employeeId: employee.id }
+    );
+
+    // Se chegou até essa linha, quer dizer que nenhum erro ocorreu.
+    // Com isso, podemos finalizar a transação usando a função `commit`.
+
+    return res.status(201).json({ message: 'Cadastrado com sucesso' });
+  } catch (e) {
+    console.log(e.message);
+    res.status(500).json({ message: 'Algo deu errado' });
+  }
+});
+
+// -------------------// usando unmanaged transaction
+/* routerEmployee.post('/', async (req, res) => {
   // Primeiro iniciamos a transação
   const t = await sequelize.transaction();
 
@@ -101,6 +124,6 @@ routerEmployee.post('/', async (req, res) => {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   }
-});
+}); */
 
 module.exports = routerEmployee;

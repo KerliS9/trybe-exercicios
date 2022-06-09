@@ -1,2 +1,4 @@
-module.exports = (err, _req, res, _next) => 
+module.exports = (err, _req, res, _next) => {
+  console.log('error handleError', err);
   res.status(err.status || 500).json({ message: err.message || "Erro inesperado. Por favor, tente mais tarde" });
+}
