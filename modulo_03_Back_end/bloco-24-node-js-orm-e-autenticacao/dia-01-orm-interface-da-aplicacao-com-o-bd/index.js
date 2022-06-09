@@ -1,5 +1,5 @@
 const express = require('express');
-require('dotenv').config();
+// require('dotenv').config();
 const errorHandler = require('./middlewares/errorHandler');
 
 // const userController = require('./controllers/userController');
@@ -17,4 +17,6 @@ app.use(require('./router'));
 // app.use('/employees', employeeController);
 // app.use('/clientsbooks', clientBooksController);
 app.use(errorHandler);
-app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}!`));
+// app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}!`));
+
+module.exports = app;
