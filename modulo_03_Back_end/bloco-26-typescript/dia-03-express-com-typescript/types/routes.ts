@@ -1,10 +1,14 @@
 import { Router } from 'express';
-import { StatusCodes } from 'http-status-codes';
+// import { StatusCodes } from 'http-status-codes';
+import UserController from './controllers/userController';
 
 const routersTypes = Router();
 
-routersTypes.get('/', (req, res) => {
+/* routersTypes.get('/', (req, res) => {
   res.status(StatusCodes.OK).send('Up and running');
-})
+}) */
+
+routersTypes.get('/users', UserController.getAll);
+routersTypes.post('/users', UserController.create);
 
 export default routersTypes;
