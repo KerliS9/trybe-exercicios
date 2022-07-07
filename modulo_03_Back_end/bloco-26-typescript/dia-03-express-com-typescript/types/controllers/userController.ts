@@ -9,6 +9,7 @@ export default {
   },
 
   create: async (req: Request, res: Response): Promise<Response> => {
+    console.log('controllers', req.url.slice(1));
     const user = await UserService.create(req.body);
     return res.status(StatusCodes.CREATED).json(user);
   }

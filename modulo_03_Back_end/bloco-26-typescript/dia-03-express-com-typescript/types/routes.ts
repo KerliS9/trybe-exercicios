@@ -1,6 +1,7 @@
 import { Router } from 'express';
 // import { StatusCodes } from 'http-status-codes';
 import UserController from './controllers/userController';
+// import ValidateBody from './middleware/validateBody';
 
 const routersTypes = Router();
 
