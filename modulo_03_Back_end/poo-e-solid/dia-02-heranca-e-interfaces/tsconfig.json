@@ -1,5 +1,5 @@
 {
-  // "extends": "@tsconfig/node14/tsconfig.json",
+  "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
@@ -103,6 +103,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  // "include":["src/**/*"], /* aqui estamos incluindo todos os arquivos dentro da pasta src */
-  // "exclude": ["node_modules", "**/*.spec.ts"]
+  "include":["src/**/*"], /* aqui estamos incluindo todos os arquivos dentro da pasta src */
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
