@@ -1,34 +1,34 @@
 import { IPerson } from '../interfaces/Interfaces';
 
 class Person implements IPerson {
-  name: string;
+  name!: string; // ! para não precisar iniciar no constructor
 
-  birthday: Date;
+  birthday!: Date;
 
   constructor(name: string, birthday: Date) {
-    Person.isNameValid(name);
-    Person.personAge(birthday);
-    this.name = name;
-    this.birthday = birthday;
+    // Person.isNameValid(name);
+    // Person.personAge(birthday);
+    this.setName = name;
+    this.setBirthday = birthday;
   }
 
   /* public get getName(): string {
     return this.name;
-  }
+  } */
 
   public set setName(value: string) {
-    // Person.isNameValid(value);
+    Person.isNameValid(value);
     this.name = value;
   }
 
-  public get getBirthday(): Date {
+  /* public get getBirthday(): Date {
     return this.birthday;
-  }
+  } */
 
   public set setBirthday(value: Date) {
-    // Person.personAge(value);
+    Person.personAge(value);
     this.birthday = value;
-  } */
+  }
 
   static isNameValid(name: string): void {
     if (name.length <= 3) throw new Error('Nome com menos de 3 caracteres');
