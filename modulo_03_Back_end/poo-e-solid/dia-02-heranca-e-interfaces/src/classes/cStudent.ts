@@ -1,5 +1,5 @@
-import { IStudent } from './Interfaces';
-import Person from './CPerson';
+import { IStudent } from '../interfaces/Interfaces';
+import Person from './cPerson';
 
 export default class Student extends Person implements IStudent {
   enrollment: string;

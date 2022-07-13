@@ -1,4 +1,4 @@
-import { IPerson } from './Interfaces';
+import { IPerson } from '../interfaces/Interfaces';
 
 class Person implements IPerson {
   name: string;
