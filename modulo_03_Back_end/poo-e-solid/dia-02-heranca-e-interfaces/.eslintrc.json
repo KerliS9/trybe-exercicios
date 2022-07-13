@@ -5,9 +5,12 @@
         "es2021": true
     },
     "extends": [
-        "airbnb-base"
+        "airbnb-base",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/typescript"
     ],
     "parser": "@typescript-eslint/parser",
+    "root": true,
     "parserOptions": {
         "ecmaVersion": "latest"
     },
