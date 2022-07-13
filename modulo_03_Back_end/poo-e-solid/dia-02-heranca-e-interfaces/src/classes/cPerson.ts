@@ -6,7 +6,7 @@ class Person implements IPerson {
   birthday: Date;
 
   constructor(name: string, birthday: Date) {
-    this.isNameValid(name);
+    Person.isNameValid(name);
     this.name = name;
     this.birthday = birthday;
   }
@@ -16,7 +16,7 @@ class Person implements IPerson {
   }
 
   public set setName(value: string) {
-    this.isNameValid(value);
+    Person.isNameValid(value);
     this.name = value;
   }
 
@@ -28,7 +28,7 @@ class Person implements IPerson {
     this.birthday = value;
   }
 
-  private isNameValid(name: string): void {
+  static isNameValid(name: string): void {
     if (name.length <= 3) throw new Error('Nome com menos de 3 caracteres');
   }
 }
