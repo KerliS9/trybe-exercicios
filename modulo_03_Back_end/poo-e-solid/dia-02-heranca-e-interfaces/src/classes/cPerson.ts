@@ -7,16 +7,17 @@ class Person implements IPerson {
 
   constructor(name: string, birthday: Date) {
     Person.isNameValid(name);
+    Person.personAge(birthday);
     this.name = name;
     this.birthday = birthday;
   }
 
-  public get getName(): string {
+  /* public get getName(): string {
     return this.name;
   }
 
   public set setName(value: string) {
-    Person.isNameValid(value);
+    // Person.isNameValid(value);
     this.name = value;
   }
 
@@ -25,11 +26,23 @@ class Person implements IPerson {
   }
 
   public set setBirthday(value: Date) {
+    // Person.personAge(value);
     this.birthday = value;
-  }
+  } */
 
   static isNameValid(name: string): void {
     if (name.length <= 3) throw new Error('Nome com menos de 3 caracteres');
+  }
+
+  static checkDate(value: Date): number {
+    const time = Math.abs(new Date().getTime() - value.getTime());
+    const years = 31_536_000_000;
+    return Math.floor(time / years);
+  }
+
+  static personAge(value: Date): void {
+    if (value.getTime() > new Date().getTime()) throw new Error('Data de nascimento nao pode ser do futuro');
+    if (Person.checkDate(value) > 120) throw new Error('Idade máxima permitida é 120 anos');
   }
 }
 
