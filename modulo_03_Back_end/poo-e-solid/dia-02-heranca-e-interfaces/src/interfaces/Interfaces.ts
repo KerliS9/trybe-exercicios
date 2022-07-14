@@ -8,3 +8,13 @@ export interface IStudent {
   examsGrades: number[];
   worksGrades: number[];
 }
+
+export interface IEmployee {
+  registration: string;
+  salary: number;
+  admissionDate: Date;
+}
+
+export interface ISubject {
+  subject: string;
+}
