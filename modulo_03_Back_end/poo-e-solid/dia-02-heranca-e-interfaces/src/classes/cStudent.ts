@@ -1,7 +1,7 @@
-import { IStudent } from '../interfaces/Interfaces';
+import { IEnrollable } from '../interfaces/Interfaces';
 import Person from './cPerson';
 
-export default class Student extends Person implements IStudent {
+export default class Student extends Person implements IEnrollable {
   enrollment!: string;
 
   examsGrades!: number[];
@@ -14,6 +14,9 @@ export default class Student extends Person implements IStudent {
     this.setExamsGrades = exames;
     this.setWorksGrades = works;
   }
+  /* generateEnrollment(): string {
+    throw new Error('Method not implemented.');
+  } */
 
   set setEnrollment(value: string) {
     Student.generateEnrollment();

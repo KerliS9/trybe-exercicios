@@ -18,3 +18,8 @@ export interface IEmployee {
 export interface ISubject {
   subject: string;
 }
+
+export interface IEnrollable {
+  enrollment: string;
+  generateEnrollment(): string;
+}

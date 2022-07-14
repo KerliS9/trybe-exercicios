@@ -1,6 +1,6 @@
 import { IPerson } from '../interfaces/Interfaces';
 
-class Person implements IPerson {
+abstract class Person implements IPerson {
   name!: string; // ! para não precisar iniciar no constructor
 
   birthday!: Date;

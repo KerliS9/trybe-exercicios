@@ -1,12 +1,13 @@
-import Person from './classes/cPerson';
+// import Person from './classes/cPerson';
 import Student from './classes/cStudent';
 import Subject from './classes/cSubject';
 import Teacher from './classes/cTeacher';
 
-const person1 = new Person('kerli', new Date('09/12/1987'));
+// const person1 = new Person('kerli', new Date('09/12/1987'));
+// ajustada para abstrata impossibilitando o uso direto
 // new Date(Date now())
 
-console.log('person1: ', person1);
+// console.log('person1: ', person1);
 
 const student1 = new Student([6, 7, 8, 9], [8, 9], 'kerli', new Date('09/12/1987'));
 // console.log(student1);
