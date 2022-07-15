@@ -10,7 +10,7 @@ export default class Student extends Person implements IEnrollable {
 
   constructor(exames: number[], works: number[], name: string, birthday: Date) {
     super(name, birthday);
-    this.setEnrollment = Student.generateEnrollment();
+    this.setEnrollment = this.generateEnrollment();
     this.setExamsGrades = exames;
     this.setWorksGrades = works;
   }
@@ -19,7 +19,7 @@ export default class Student extends Person implements IEnrollable {
   } */
 
   set setEnrollment(value: string) {
-    Student.generateEnrollment();
+    this.generateEnrollment();
     if (value.length < 16) throw new Error('A matrícula deve possuir no mínimo 16 caracteres.');
 
     this.enrollment = value;
@@ -52,9 +52,9 @@ export default class Student extends Person implements IEnrollable {
     return Math.round(sum / divider);
   }
 
-  static generateEnrollment(): string {
+  generateEnrollment(): string {
     const randomStr = String(Date.now() * (Math.random() + 1)).replace(/\W/g, '');
-    // const randomStr = 'teste';
+    this.enrollment = randomStr;
     return `STU${randomStr}`;
   }
 }
