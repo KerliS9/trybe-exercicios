@@ -1,4 +1,4 @@
-import { Schema } from 'mongoose';
+import { model, Schema } from 'mongoose';
 
 interface IInventory {
   item: string,
@@ -7,7 +7,7 @@ interface IInventory {
   status: string,
 }
 
-const bookSchema = new Schema<IInventory>({
+const inventorySchema = new Schema<IInventory>({
   item: {
     type: String,
     required: true,
@@ -25,3 +25,5 @@ const bookSchema = new Schema<IInventory>({
     required: true,
   }
 });
+
+const inventoryModel = model<IInventory>('Inventory', inventorySchema);
