@@ -3,7 +3,7 @@ import { model, Schema } from 'mongoose';
 interface IInventory {
   item: string,
   quantity: number,
-  size: string, // objeto
+  size: { h: number, w: number, uom: string }, // objeto
   status: string,
 }
 
@@ -16,9 +16,10 @@ const inventorySchema = new Schema<IInventory>({
     type: Number,
     required: true,
   },
-  size: {
-    type: String,
-    required: true,
+  size: { 
+    h: { type: Number, required: true },
+    w: { type: Number, required: true },
+    uom: { type: String, required: true },
   },
   status: {
     type: String,

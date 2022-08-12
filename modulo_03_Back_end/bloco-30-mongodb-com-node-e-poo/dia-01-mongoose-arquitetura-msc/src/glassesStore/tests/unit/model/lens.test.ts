@@ -12,6 +12,7 @@ describe('Lens Model', () => {
 		sinon.stub(Model, 'findOne').resolves(lensMockWithId);
     sinon.stub(Model, 'find').resolves([lensMockWithId]);
     sinon.stub(Model, 'findByIdAndDelete').resolves({});
+    sinon.stub(Model, 'findByIdAndUpdate').resolves(lensMockWithId);
 	});
 
 	after(() => {
@@ -56,6 +57,21 @@ describe('Lens Model', () => {
     it('_id not found', async () => {
 			try {
 				await lensModel.destroy('123ERRADO');
+			} catch (error: any) {
+				expect(error.message).to.be.eq('InvalidMongoId');
+			}
+		});
+	});
+
+  describe('update a lens', () => {
+		it('successfully updated', async () => {
+			const lensUpdated = await lensModel.update('62cf1fc6498565d94eba52c1', lensMock);
+			expect(lensUpdated).to.be.deep.equal(lensMockWithId);
+		});
+
+    it('_id not found', async () => {
+			try {
+				await lensModel.update('123ERRADO', lensMock);
 			} catch (error: any) {
 				expect(error.message).to.be.eq('InvalidMongoId');
 			}
