@@ -2,7 +2,8 @@ import { expect } from 'chai';
 import sinon from 'sinon';
 import LensModel from '../../../models/lens';
 import { Model } from 'mongoose';
-import { lensMock, lensMockWithId } from '../../mocks/lensMock';
+import { lensMock, lensMockWithId,
+  lensMockToChange, lensMockWithChangeId } from '../../mocks/lensMock';
 
 describe('Lens Model', () => {
   const lensModel = new LensModel();
@@ -65,13 +66,13 @@ describe('Lens Model', () => {
 
   describe('update a lens', () => {
 		it('successfully updated', async () => {
-			const lensUpdated = await lensModel.update('62cf1fc6498565d94eba52c1', lensMock);
-			expect(lensUpdated).to.be.deep.equal(lensMockWithId);
+			const lensUpdated = await lensModel.update('62cf1fc6498565d94eba52c1', lensMockToChange);
+			expect(lensUpdated).to.be.deep.equal(lensMockWithChangeId);
 		});
 
     it('_id not found', async () => {
 			try {
-				await lensModel.update('123ERRADO', lensMock);
+				await lensModel.update('123ERRADO', lensMockToChange);
 			} catch (error: any) {
 				expect(error.message).to.be.eq('InvalidMongoId');
 			}

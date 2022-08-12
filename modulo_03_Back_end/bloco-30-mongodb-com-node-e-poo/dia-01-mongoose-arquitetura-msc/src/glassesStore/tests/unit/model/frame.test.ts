@@ -2,7 +2,8 @@ import { expect } from 'chai';
 import sinon from 'sinon';
 import FrameModel from '../../../models/frame';
 import { Model } from 'mongoose';
-import { frameMock, frameMockWithId } from '../../mocks/frameMock';
+import { frameMock, frameMockWithId,
+	frameMockWithChangeId, frameMockToChange } from '../../mocks/frameMock';
 
 describe('Frame Model', () => {
   const frameModel = new FrameModel();
@@ -12,7 +13,7 @@ describe('Frame Model', () => {
 		sinon.stub(Model, 'findOne').resolves(frameMockWithId);
 		sinon.stub(Model, 'find').resolves([frameMockWithId]);
 		sinon.stub(Model, 'findByIdAndDelete').resolves({});
-		sinon.stub(Model, 'findByIdAndUpdate').resolves(frameMockWithId);
+		sinon.stub(Model, 'findByIdAndUpdate').resolves(frameMockWithChangeId);
 	});
 
 	after(() => {
@@ -65,12 +66,12 @@ describe('Frame Model', () => {
 
 	describe('update a frame', () => {
 		it('successfully updated', async () => {
-			const frameUpdated = await frameModel.update('62cf1fc6498565d94eba52cd', frameMock);
-			expect(frameUpdated).to.be.deep.equal(frameMockWithId);
+			const frameUpdated = await frameModel.update('62cf1fc6498565d94eba52cd', frameMockToChange);
+			expect(frameUpdated).to.be.deep.equal(frameMockWithChangeId);
 		});
 		it('_id not found', async () => {
 			try {
-				await frameModel.update('123ERRADO', frameMock);
+				await frameModel.update('123ERRADO', frameMockToChange);
 			} catch (error: any) {
 				expect(error.message).to.be.eq('InvalidMongoId');
 			}

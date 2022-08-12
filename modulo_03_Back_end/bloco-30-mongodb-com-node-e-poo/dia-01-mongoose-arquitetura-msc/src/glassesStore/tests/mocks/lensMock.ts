@@ -13,4 +13,17 @@ const lensMockWithId: ILens & { _id: string} = {
   blueLightFilter: true,
 }
 
-export { lensMockWithId, lensMock };
+const lensMockToChange:ILens = {
+  degree: 2,
+  antiGlare: true,
+  blueLightFilter: true,
+}
+
+const lensMockWithChangeId: ILens & { _id: string} = {
+  _id: '62cf1fc6498565d94eba52c1',
+  degree: 2,
+  antiGlare: true,
+  blueLightFilter: true,
+}
+
+export { lensMockWithId, lensMock, lensMockToChange, lensMockWithChangeId };
