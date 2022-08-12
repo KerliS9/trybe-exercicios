@@ -13,7 +13,7 @@ describe('Lens Model', () => {
 		sinon.stub(Model, 'findOne').resolves(lensMockWithId);
     sinon.stub(Model, 'find').resolves([lensMockWithId]);
     sinon.stub(Model, 'findByIdAndDelete').resolves({});
-    sinon.stub(Model, 'findByIdAndUpdate').resolves(lensMockWithId);
+    sinon.stub(Model, 'findByIdAndUpdate').resolves(lensMockWithChangeId);
 	});
 
 	after(() => {
