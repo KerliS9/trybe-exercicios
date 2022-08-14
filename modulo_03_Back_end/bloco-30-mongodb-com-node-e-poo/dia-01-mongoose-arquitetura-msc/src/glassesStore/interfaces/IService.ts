@@ -2,7 +2,7 @@ interface IService<T> {
   create(obj:T):Promise<T>,
   readOne(_id:string):Promise<T>,
   read():Promise<T[]>,
-  destroy(_id:string): Promise<string>;
+  destroy(_id:string): Promise<T>;
 }
 
 export default IService;

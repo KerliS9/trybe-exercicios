@@ -26,11 +26,10 @@ class FrameService implements IService<IFrame> {
     return frames;
   }
 
-  public async destroy(_id: string): Promise<string> {
-    const frame = await this.model.readOne(_id);
+  public async destroy(_id: string): Promise<IFrame> {
+    const frame = await this.model.destroy(_id);
     if (!frame) throw new Error(ErrorTypes.EntityNotFound);
-    await this.model.destroy(_id);
-    return 'Frame deleted';
+    return frame;
   }
 }
 
