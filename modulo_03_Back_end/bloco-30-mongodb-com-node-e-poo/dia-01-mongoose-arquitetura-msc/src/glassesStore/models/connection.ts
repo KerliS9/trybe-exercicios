@@ -3,7 +3,10 @@ import mongoose from 'mongoose';
 
 const connectToDatabase = (
   mongoDatabaseURI = process.env.MONGO_URI
-    || 'mongodb://root:kerli5678@localhost:27017/glassesStore?authSource=admin',
-) => mongoose.connect(mongoDatabaseURI);
+) => mongoose.connect(mongoDatabaseURI as string);
 
 export default connectToDatabase;
+
+
+// || 'mongodb://root:kerli5678@localhost:27017/glassesStore?authSource=admin'
+// MONGO_URI=mongodb://root:kerli5678@localhost:27017/?authMechanism=DEFAULT
