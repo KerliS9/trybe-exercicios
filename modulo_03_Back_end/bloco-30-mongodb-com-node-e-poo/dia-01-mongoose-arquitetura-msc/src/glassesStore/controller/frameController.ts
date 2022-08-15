@@ -2,11 +2,15 @@ import { Request, Response } from 'express';
 import IService from '../interfaces/IService';
 import IFrame from '../interfaces/frame';
 
+interface RequestIFrame extends Request {
+  body: IFrame,
+}
+
 export default class FrameController {
   constructor(private _service: IService<IFrame>) { }
 
   public async create(
-    req: Request & { body: IFrame }, 
+    req: RequestIFrame, 
     res: Response<IFrame>,
   ) {
     const { material, color } = req.body;
@@ -34,6 +38,7 @@ export default class FrameController {
   }
 
   public async update(req: Request, res: Response<IFrame>) {
+    // await this.readOne(_id);
     const frame = await this._service.update(req.params.id, req.body);
     return res.status(200).json(frame);
   }

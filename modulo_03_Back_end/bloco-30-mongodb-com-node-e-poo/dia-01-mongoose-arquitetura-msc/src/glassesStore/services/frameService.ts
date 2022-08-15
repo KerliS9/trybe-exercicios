@@ -32,7 +32,12 @@ class FrameService implements IService<IFrame> {
     return frame;
   }
 
-  public async update(_id: string, obj: IFrame): Promise< IFrame> {
+  public async update(_id: string, obj: IFrame): Promise<IFrame> {
+    /* const parsed = FrameZodSchema.safeParse(obj);
+    if (!parsed.success) {
+      throw parsed.error;
+    } */
+    // await this.readOne(_id);
     const frame = await this.model.update(_id, obj);
     if (!frame) throw new Error(ErrorTypes.EntityNotFound);
     return frame;
