@@ -32,4 +32,9 @@ export default class FrameController {
     const frame = await this._service.destroy(req.params.id);
     return res.status(200).json(frame);
   }
+
+  public async update(req: Request, res: Response<IFrame>) {
+    const frame = await this._service.update(req.params.id, req.body);
+    return res.status(200).json(frame);
+  }
 }

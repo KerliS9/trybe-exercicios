@@ -31,6 +31,12 @@ class FrameService implements IService<IFrame> {
     if (!frame) throw new Error(ErrorTypes.EntityNotFound);
     return frame;
   }
+
+  public async update(_id: string, obj: IFrame): Promise< IFrame> {
+    const frame = await this.model.update(_id, obj);
+    if (!frame) throw new Error(ErrorTypes.EntityNotFound);
+    return frame;
+  }
 }
 
 export default FrameService;

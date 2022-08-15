@@ -14,6 +14,7 @@ routeFrame.get('/frame/:id', (req, res) => frameController.readOne(req, res));
 routeFrame.get('/frame', (req, res) => frameController.read(req, res));
 
 routeFrame.delete('/frame/:id', (req, res) => frameController.destroy(req, res));
+routeFrame.put('/frame/:id', (req, res) => frameController.update(req, res));
 
 
 export default routeFrame;
