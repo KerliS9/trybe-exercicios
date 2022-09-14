@@ -1,5 +1,6 @@
-# list
+from typing import Counter
 
+# list - estrutura de array
 trybe_course = ["Introdução", "Front-end", "Back-end"]
 
 trybe_course.append("Ciência da Computação")
@@ -35,9 +36,9 @@ print(people_by_id)
 print(people_by_id.items())
 
 info = {
-  "personagem": "Margarida",
-  "origem": "Pato Donald",
-  "nota": "Namorada do personagem principal nos quadrinhos do Pato Donald",
+    "personagem": "Margarida",
+    "origem": "Pato Donald",
+    "nota": "Namorada do personagem principal nos quadrinhos do Pato Donald",
 }
 print(info)
 info["recorrente"] = "Sim"  # adiciona a lista
@@ -45,4 +46,11 @@ print(info)
 del info["origem"]
 print(info)
 
+my_list = [20, 20, 1, 2]
+print(len(my_list))
+print(Counter(my_list))
+
 # range
+# gera sequencia numérica de valor inicial até um valor final
+print(list(range(5)))  # [0, 1, 2, 3, 4]
+print(list(range(1, 5)))  # [1, 2, 3, 4]
