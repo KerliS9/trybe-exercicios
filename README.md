@@ -42,7 +42,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
-- [X] 3-5: _[Projeto - Lessons Learned](https://github.com/KerliS9/portfolio_kerli/tree/master/1-projectLessonsLearned)_
+- [X] 3-5: _[Projeto - Lessons Learned]()_
 - [X] 3-6: _Revisão_
 
 ##### [Bloco 4: Introdução à JavaScript e Lógica de Programação](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-04-introducao-a-javascript-e-logica-de-programacao)
@@ -52,7 +52,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 4-2: _JavaScript - Array e loop For_
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [X] 4-4: _JavaScript - Objetos e Funções_
-- [X] 4-5: _[Projeto - Playground Functions](https://github.com/KerliS9/portfolio_kerli/tree/master/2-projectPlaygroundFunctions)_
+- [X] 4-5: _[Projeto - Playground Functions]()_
 - [X] 4-6: _Revisão_
 - [X] 4-7: _Bônus_
 
@@ -63,13 +63,12 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
 - [X] 5-5: _Fundamentos - JavaScript - Projetos_
-- [X] 5-5: _[Projeto - Arte com Pixels](https://github.com/KerliS9/portfolio_kerli/tree/master/3-projectPixelsArt)_
-- [X] 5-6: _[Projeto - Lista de Tarefas](https://github.com/KerliS9/portfolio_kerli/tree/master/4-projectToDoList)_
+- [X] 5-5: _[Projeto - Arte com Pixels]_
+- [X] 5-6: _[Projeto - Lista de Tarefas]_
 - [ ] 5-7: _[Projeto Bônus - Meme Generator]()_
 - [ ] 5-7: _[Projeto Bônus - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto Bônus - Carta Misteriosa]()_
 - [X] 5-8: _Revisão_
-- [] 5-9: _Bônus_
 
 ##### [Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo](https://github.com/KerliS9/trybe-exercicios/tree/master/modulo_01_fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo)
 
@@ -78,18 +77,15 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 6-3: _CSS Flexbox - Part 1_
 - [X] 6-4: _CSS Flexbox - Part 2_
 - [X] 6-5: _CSS Responsivo - Mobile First_
-- [X] 6-6: _[Projeto - Trybewarts](https://github.com/KerliS9/portfolio_kerli/tree/master/5-projectTrybewarts)_
+- [X] 6-6: _[Projeto - Trybewarts]()_
 - [X] 6-7: _Revisão_
-- [] 6-8: _Bônus_
 
 ##### Bloco 7: Introdução à JavaScript ES6 & Testes Unitários
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Primeiros passos em Jest_
-- [X] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/KerliS9/portfolio_kerli/tree/master/6-projectJsUnitTests)_
-- [] 7-5: _Revisão_
-- [] 7-6: _Bônus_
+- [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
 ##### Bloco 8: Higher Order Functions do JavaScript ES6
 
@@ -98,7 +94,7 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [X] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [X] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [ ] 8-6: _[Projeto - Zoo functions]()_
+- [X] 8-6: _[Projeto - Zoo functions]_
 - [X] 8-7: _Revisão_
 - [X] 8-8: _Bônus_
 
@@ -108,7 +104,6 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [X] 9-3: _Jest - Testes Assíncronos_
 - [X] 9-4: _[Projeto - Carrinho de Compras]()_
-- [] 9-5: _Revisão_
 - [X] 9-6 _Bonus_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
@@ -120,31 +115,23 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 10-1: _'Hello, world!' no React!_
 - [X] 10-2: _Componentes React_
 - [X] 10-3: _[Projeto - Sistema Solar]()_
-- [] 10-4: _Revisão_
-- [] 10-5 _Bonus_
 
 ##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
 - [X] 11-1: _Componentes com Estado e Eventos_
 - [X] 11-2: _Formulários no React_
 - [X] 11-3: _[Projeto - Triunfo]()_
-- [] 11-4: _Revisão_
-- [] 11-5 _Bonus_
 
 ##### Bloco 12: Ciclo de vida de componentes e React Router
 
 - [X] 12-1: _Ciclo de vida de componentes_
 - [X] 12-2: _React Router_
 - [X] 12-3: _[Projeto - TrybeTunes]()_
-- [] 12-4: _Revisão_
-- [] 12-5 _Bonus_
 
 ##### Bloco 13: Metodologias Ágeis
 
 - [X] 13-1: _Metodologias Ágeis_
 - [X] 13-2: _[Projeto - Frontend Online Store]()_
-- [] 13-3: _Revisão_
-- [] 13-4 _Bonus_
 
 ##### Bloco 14: Testes automatizados com React Testing Library
 
@@ -152,53 +139,49 @@ Para pessoas dedicadas e estudiosas que buscam uma carreira em desenvolvimento w
 - [X] 14-2: _RTL - Mocks e Inputs_
 - [X] 14-3: _RTL - Testando React Router_
 - [X] 14-4: _[Projeto - Testes em React]()_
-- [] 14-5: _Revisão_
-- [] 14-6 _Bonus_
 
 ##### Bloco 15: Gerenciamento de estado com Redux
 
-- [ ] 15-1: _Introdução ao Redux - O estado global da aplicação_
-- [ ] 15-2: _Usando o Redux no React_
-- [ ] 15-3: _Usando o Redux no React - Prática_
-- [ ] 15-4: _Usando o Redux no React - Actions Assíncronas_
-- [ ] 15-5: _Testes em React-Redux_
-- [ ] 15-6: _[Projeto - Trybe Wallet]()_
-- [] 15-7: _Revisão_
-- [] 15-8 _Bonus_
+- [X] 15-1: _Introdução ao Redux - O estado global da aplicação_
+- [X] 15-2: _Usando o Redux no React_
+- [X] 15-3: _Usando o Redux no React - Prática_
+- [X] 15-4: _Usando o Redux no React - Actions Assíncronas_
+- [X] 15-5: _Testes em React-Redux_
+- [X] 15-6: _[Projeto - Trybe Wallet]()_
 
 ##### Bloco 16: Projeto Jogo de Trivia
 
-- [ ] 16-1: _[Projeto - Jogo de Trivia]()_
+- [X] 16-1: _[Projeto - Jogo de Trivia]()_
 
 ##### Bloco 17: Context API e React Hooks
 
-- [ ] 17-1: _Context API do React_
-- [ ] 17-2: _React Hooks - useState e useContext_
-- [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [X] 17-1: _Context API do React_
+- [X] 17-2: _React Hooks - useState e useContext_
+- [X] 17-3: _React Hooks - useEffect e Hooks customizados_
+- [X] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
 ##### Bloco 18: Projeto App de Receitas
 
-- [ ] 18-1: _[Projeto - App de Receitas]()_
+- [X] 18-1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Bloco 19: Introdução à SQL
 
-- [ ] 19-1: _Introdução - Back-end_
-- [ ] 19-1: _Introdução - Bancos de dados relacionais_
-- [ ] 19-1: _Banco de dados SQL_
-- [ ] 19-2: _Encontrando dados em um banco de dados_
-- [ ] 19-3: _Filtrando dados de forma específica_
-- [ ] 19-4: _Manipulando tabelas_
-- [ ] 19-5: _[Projeto - All For One]()_
+- [X] 19-1: _Introdução - Back-end_
+- [X] 19-1: _Introdução - Bancos de dados relacionais_
+- [X] 19-1: _Banco de dados SQL_
+- [X] 19-2: _Encontrando dados em um banco de dados_
+- [X] 19-3: _Filtrando dados de forma específica_
+- [X] 19-4: _Manipulando tabelas_
+- [X] 19-5: _[Projeto - All For One]()_
 
 ##### Bloco 20: Funções SQL, Joins e Subqueries
 
-- [ ] 20-1: _Funções mais usadas no SQL_
-- [ ] 20-2: _Descomplicando JOINs, UNIONs e Subqueries_
-- [ ] 20-3: _Stored Routines & Stored Functions_
-- [ ] 20-4: _[Projeto - Vocabulary Booster]()_
+- [X] 20-1: _Funções mais usadas no SQL_
+- [X] 20-2: _Descomplicando JOINs, UNIONs e Subqueries_
+- [X] 20-3: _Stored Routines & Stored Functions_
+- [] 20-4: _[Projeto - Vocabulary Booster]()_
 
 ##### Bloco 21: Normalização e Modelagem de banco de dados
 
