@@ -1,7 +1,8 @@
 lista = [1, 2, 3]
 print(lista)
 
-# help(list) --- encontrar comandos auxiliares
+# help() --- encontrar comandos auxiliares. Exemplo help('for')
+# dir()
 
 # Estruturas
 # list --- array do JS | armazena entidades relacionadas
