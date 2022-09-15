@@ -26,11 +26,10 @@ with open("arquivo1.txt", "w") as file:
     file.write("Michelle 27\n")
 print(file.closed)
 
-
+# with abre e fecha o arquivo
 LINES = ["Marcos 10\n", "Felipe 4\n", "José 6\n", "Ana 10\n", "Maria 5\n"]
 with open("estudantes.txt", "w") as file:
     file.writelines(LINES)
-    file.close()
 
 selected_students = []
 with open("estudantes.txt") as gradesFile:
@@ -39,9 +38,7 @@ with open("estudantes.txt") as gradesFile:
         student_grade = student_grade.split(" ")
         if int(student_grade[1]) < 6:
             selected_students.append(student_grade[0] + " " + student_grade[1])
-gradesFile.close()
 
 with open("selected_students.txt", mode="w") as selected_students_file:
     print(selected_students)
     selected_students_file.writelines(selected_students)
-    selected_students_file.close()
