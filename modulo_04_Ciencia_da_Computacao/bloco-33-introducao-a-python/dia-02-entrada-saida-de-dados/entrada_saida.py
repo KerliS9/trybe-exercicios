@@ -32,9 +32,7 @@ for n in nome:
 
 # receba números e jogue um erro
 nums = input("Insira valores aqui, separados por espaço: ")
-
 numsArr = nums.split(" ")
-
 sum = 0
 for num in numsArr:
     if not num.isdigit():
